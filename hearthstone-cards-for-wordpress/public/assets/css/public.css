@@ -1,0 +1,16 @@
+/* This stylesheet is used to style the public-facing components of the plugin. */
+.hcfw-card {
+    position: relative;
+}
+
+.hcfw-overlay {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.hcfw-overlay.active {
+    display: block;
+}
