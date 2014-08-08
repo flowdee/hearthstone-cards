@@ -64,6 +64,9 @@ All of my plugins & themes are handmade with passion. I really looking forward t
 
 ## Changelog
 
+#### Version 1.1 (8th August 2014)
+* Naxxramas cards
+
 #### Version 1.0 (11th July 2014)
 * Initial release
 
