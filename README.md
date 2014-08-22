@@ -21,7 +21,7 @@ Hearthstone Cards for WordPress automatically adds an overlay to written card na
 ## How to display Hearthstone Cards
 Update 1.2 comes along with a usability rebuild to improve reliable card name detection.
 
-**Please use e.g. [Druid of the Claw] to convert your card names within your WordPress pages or posts.**
+Please use e.g. **[Druid of the Claw]** to convert your card names within your WordPress pages or posts.
 
 Basically take care of using correct special character according to your selected language.
 
