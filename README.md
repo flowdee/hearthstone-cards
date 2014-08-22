@@ -72,7 +72,7 @@ All of my plugins & themes are handmade with passion. I really looking forward t
 
 ## Changelog
 
-#### 1.2 (22th August 2014)
+#### Version 1.2 (22th August 2014)
 * Rebuild usability to improve reliable card name detection. Please use e.g. [Druid of the Claw] to convert your card names.
 
 #### Version 1.1 (8th August 2014)
