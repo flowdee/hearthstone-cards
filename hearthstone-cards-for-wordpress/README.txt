@@ -107,7 +107,7 @@ In order to use the card language of your choice the plugin comes along with sup
 
 = How does the plugin work? =
 
-The plugin searches for the name of familiar Hearthstone cards and automatically adds an overlay to them.
+The plugin searches for Hearthstone card names within brackets e.g. [Druid of the Claw] and automatically adds an overlay to them.
 
 == Screenshots ==
 
