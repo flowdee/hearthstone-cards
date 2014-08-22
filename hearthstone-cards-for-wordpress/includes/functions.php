@@ -64,6 +64,7 @@ function hcfw_find_and_replace_cards($content){
         // Prepare content
         $json_a = json_decode($string,true);
 
+        $hearthstoneShortcodes = array();
         $hearthstoneCards = array();
 
         foreach ($json_a as $key => $value){
@@ -76,12 +77,12 @@ function hcfw_find_and_replace_cards($content){
                     $newName = '<a class="hcfw-card" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '">' . $sub['name'] . '</a>';
 
                     $hearthstoneCards[$sub['name']] = $newName;
-
+                    $hearthstoneShortcodes[$sub['name']] = '[' . $sub['name'] . ']';
                 }
             }
         }
 
-        $content = str_replace(array_keys($hearthstoneCards), $hearthstoneCards, $content);
+        $content = str_replace(array_values($hearthstoneShortcodes), $hearthstoneCards, $content);
     }
 
     return $content;

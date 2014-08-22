@@ -21,6 +21,11 @@ $hcfw_language = get_option('hcfw_language');
 
     <h2><?php echo esc_html( get_admin_page_title() ); ?></h2>
 
+    <div class="updated below-h2">
+        <p><strong>Update 1.2 comes along with a usability rebuild to improve reliable card name detection.</strong></p>
+        <p>Please use e.g. <strong>[Druid of the Claw]</strong> to convert your card names within your WordPress pages or posts.</p>
+    </div>
+
     <div id="poststuff">
 
         <div id="post-body" class="metabox-holder columns-2">

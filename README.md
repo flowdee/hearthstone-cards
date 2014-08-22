@@ -18,8 +18,16 @@ Hearthstone Cards for WordPress automatically adds an overlay to written card na
 * Enjoy the helpful and reliable community within the [Support Forum](http://coder.flowdee.de/support/)
 * Regular updates and improvements
 
+## How to display Hearthstone Cards
+Update 1.2 comes along with a usability rebuild to improve reliable card name detection.
+
+**Please use e.g. [Druid of the Claw] to convert your card names within your WordPress pages or posts.**
+
+Basically take care of using correct special character according to your selected language.
+
 ## Planned enhancements
 
+* Use colored links according to the quality of the used displayed card
 * Providing a multilingual option page (feel to contact me with your translations)
 * Supporting three card sizes: Small, Medium & Large
 
@@ -63,6 +71,9 @@ All of my plugins & themes are handmade with passion. I really looking forward t
 [![Flattr flowdee](http://cdn.flowdee.de/assets/button-flattr-small.png "Flattr this!")](https://flattr.com/submit/auto?user_id=flowdee&url=http%3A%2F%2Fwordpress.org%2Fplugins%2Fhearthstone-cards%2F)
 
 ## Changelog
+
+#### 1.2 (22th August 2014)
+* Rebuild usability to improve reliable card name detection. Please use e.g. [Druid of the Claw] to convert your card names.
 
 #### Version 1.1 (8th August 2014)
 * Naxxramas cards

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip
 Requires at least: 3.5.1
 Tested up to: 3.9.1
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,8 +23,16 @@ Hearthstone Cards for WordPress automatically adds an overlay to written card na
 *   Enjoy the helpful and reliable community within the [Support Forum](http://coder.flowdee.de/forums/)
 *   Regular updates and improvements
 
+= How to display Hearthstone Cards =
+Update 1.2 comes along with a usability rebuild to improve reliable card name detection.
+
+**Please use e.g. [Druid of the Claw] to convert your card names within your WordPress pages or posts.**
+
+Basically take care of using correct special character according to your selected language.
+
 = Planned enhancements =
 
+*   Use colored links according to the quality of the used displayed card
 *   Providing a multilingual option page (feel to contact me with your translations)
 *   Supporting three card sizes: Small, Medium & Large
 
@@ -76,7 +84,7 @@ The plugin is really simple and well structured so you don’t have to prepare a
 1. After the successful installation you will find a prepared options page here: “Settings” > “Hearthstone Cards”
 2. Here you can temporary deactivate the Hearthstone Cards feature if necessary
 3. Some customization settings can be found within left metabox and described below
-3. Additionally you can find more essential and helpful links within the metaboxes on your right
+4. Additionally you can find more essential and helpful links within the metaboxes on your right
 
 = Show cards =
 Here you can temporary enable or disable the Hearthstone Cards function. At first you should enable the feature by clicking the checkbox.
@@ -108,16 +116,22 @@ The plugin searches for the name of familiar Hearthstone cards and automatically
 
 == Changelog ==
 
-= 1.1 =
+= 1.2 (22th August 2014) =
+* Rebuild usability to improve reliable card name detection. Please use e.g. [Druid of the Claw] to convert your card names.
+
+= Version 1.1 (8th August 2014) =
 * Naxxramas cards
 
-= 1.0 =
+= Version 1.0 (11th July 2014) =
 * Initial release
 
 == Upgrade Notice ==
 
-= 1.1 =
+= 1.2 (22th August 2014) =
+* Rebuild usability to improve reliable card name detection. Please use e.g. [Druid of the Claw] to convert your card names.
+
+= Version 1.1 (8th August 2014) =
 * Naxxramas cards
 
-= 1.0 =
+= Version 1.0 (11th July 2014) =
 * Initial release
