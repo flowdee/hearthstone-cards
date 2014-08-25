@@ -72,6 +72,10 @@ All of my plugins & themes are handmade with passion. I really looking forward t
 
 ## Changelog
 
+#### Version 1.3 (25th August 2014)
+* Improved compatibility
+* Fixed some bugs for fopen/curl usage (from now on using WordPress' wp_remote_fopen function)
+
 #### Version 1.2 (22th August 2014)
 * Rebuild usability to improve reliable card name detection. Please use e.g. [Druid of the Claw] to convert your card names.
 

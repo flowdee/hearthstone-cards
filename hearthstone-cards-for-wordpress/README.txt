@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip
 Requires at least: 3.5.1
 Tested up to: 3.9.1
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -115,6 +115,10 @@ The plugin searches for Hearthstone card names within brackets e.g. [Druid of th
 2. Hearthstone Cards overlay in action
 
 == Changelog ==
+
+= Version 1.3 (25th August 2014) =
+* Improved compatibility
+* Fixed some bugs for fopen/curl usage (from now on using WordPress' wp_remote_fopen function)
 
 = Version 1.2 (22th August 2014) =
 * Rebuild usability to improve reliable card name detection. Please use e.g. [Druid of the Claw] to convert your card names.

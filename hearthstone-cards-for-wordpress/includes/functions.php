@@ -50,14 +50,8 @@ function hcfw_find_and_replace_cards($content){
     // Read json file
     $json_file = HCFW_PATH . 'includes/lib/AllSets.' . $json_lang . '.json';
 
-    if (function_exists('curl_version'))
-    {
-        $string = file_get_contents_curl($json_file);
-    }
-    else if (file_get_contents(__FILE__) && ini_get('allow_url_fopen'))
-    {
-        $string = file_get_contents($json_file);
-    }
+    // Read json file
+    $string = wp_remote_fopen($json_file);
 
     if(isset($string) && !empty($string)) {
 
