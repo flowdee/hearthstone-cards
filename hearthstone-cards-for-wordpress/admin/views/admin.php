@@ -15,6 +15,8 @@
 <?php
 $hcfw_active = get_option('hcfw_active');
 $hcfw_language = get_option('hcfw_language');
+$hcfw_colored_card_names = get_option('hcfw_colored_card_names');
+$hcfw_bold_links = get_option('hcfw_bold_links');
 ?>
 
 <div class="wrap hcfw-wrap">
@@ -69,6 +71,37 @@ $hcfw_language = get_option('hcfw_language');
                                                 </fieldset>
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <th scope="row"><?php _e( 'Colored card names' ); ?></th>
+                                            <td>
+                                                <fieldset>
+                                                    <label for="hcfw_colored_card_names">
+                                                        <input name="hcfw_colored_card_names" type="checkbox" id="hcfw_colored_card_names" value="1"<?php if($hcfw_colored_card_names == 1) echo ' checked="checked"'; ?> />
+                                                        <span><?php _e( 'Enabled' ); ?></span>
+                                                    </label>
+                                                    <p>e.g. <span class="hcfw-card-rarity-Free">Holy Nova</span>,
+                                                        <span class="hcfw-card-rarity-Common">Shadow Madness</span>,
+                                                        <span class="hcfw-card-rarity-Rare">Loot Hoarder</span>,
+                                                        <span class="hcfw-card-rarity-Epic">Cabal Shadow Priest</span>,
+                                                        <span class="hcfw-card-rarity-Legendary">Ragnaros the Firelord</span>
+                                                    </p>
+                                                </fieldset>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><?php _e( 'Bold links' ); ?></th>
+                                            <td>
+                                                <fieldset>
+                                                    <label for="hcfw_bold_links">
+                                                        <input name="hcfw_bold_links" type="checkbox" id="hcfw_bold_links" value="1"<?php if($hcfw_bold_links == 1) echo ' checked="checked"'; ?> />
+                                                        <span><?php _e( 'Enabled' ); ?></span>
+                                                    </label>
+                                                    <p>e.g. <span class="hcfw-card-rarity-Common">Shadow Madness</span> or
+                                                        <span class="hcfw-bold hcfw-card-rarity-Common">Shadow Madness</span>
+                                                    </p>
+                                                </fieldset>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                                 <p>
@@ -105,11 +138,12 @@ $hcfw_language = get_option('hcfw_language');
                         <h3><span> Support & Resources</span></h3>
                         <div class="inside">
                             <ul>
+                                <li><a href="http://coder.flowdee.de/hearthstone-cards-for-wordpress/documentation/" title="View Documentation">View Documentation</a></li>
+                                <li><a href="http://coder.flowdee.de/forum/" title="Support Forum">Support Forum</a></li>
+                                <li><a href="https://github.com/flowdee/hearthstone-cards-for-wordpress/issues" title="Issue Tracker">Issue Tracker</a></li>
+                                <li><a href="http://coder.flowdee.de/contact/" title="Contact via E-Mail">Contact via E-Mail</a></li>
                                 <li><a href="http://codecanyon.net/user/flowdee?ref=flowdee" title="Envato Author Profile">Envato Author Profile</a></li>
                                 <li><a href="http://codecanyon.net/user/flowdee/portfolio?ref=flowdee" title="Envato Portfolio">Envato Portfolio</a></li>
-                                <li><a href="http://coder.flowdee.de/hearthstone-cards-for-wordpress/documentation/" title="View Documentation">View Documentation</a></li>
-                                <li><a href="http://coder.flowdee.de/support/" title="Support Forum">Support Forum</a></li>
-                                <li><a href="http://coder.flowdee.de/contact/" title="Contact via E-Mail">Contact via E-Mail</a></li>
                             </ul>
                         </div> <!-- .inside -->
 

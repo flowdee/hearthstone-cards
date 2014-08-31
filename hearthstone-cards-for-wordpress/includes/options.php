@@ -8,6 +8,12 @@ if (isset($_POST["hcfw_submit"])) {
 
     $hcfw_language = esc_attr($_POST["hcfw_language"]);
     update_option("hcfw_language", $hcfw_language);
+
+    $hcfw_colored_card_names = esc_attr($_POST["hcfw_colored_card_names"]);
+    update_option("hcfw_colored_card_names", $hcfw_colored_card_names);
+
+    $hcfw_bold_links = esc_attr($_POST["hcfw_bold_links"]);
+    update_option("hcfw_bold_links", $hcfw_bold_links);
 }
 
 // Load settings

@@ -14,3 +14,34 @@
 .hcfw-overlay.active {
     display: block;
 }
+
+/* Customizations */
+.hcfw-bold {
+    font-weight: bold;
+}
+
+/* Rarity */
+.hcfw-card-rarity-Free,
+.hcfw-card-rarity-Free:hover {
+    color: #000;
+}
+
+.hcfw-card-rarity-Common,
+.hcfw-card-rarity-Common:hover {
+    color: #0faf03;
+}
+
+.hcfw-card-rarity-Rare,
+.hcfw-card-rarity-Rare:hover {
+    color: #198eff;
+}
+
+.hcfw-card-rarity-Epic,
+.hcfw-card-rarity-Epic:hover {
+    color: #ab48ee;
+}
+
+.hcfw-card-rarity-Legendary,
+.hcfw-card-rarity-Legendary:hover {
+    color: #f07000;
+}

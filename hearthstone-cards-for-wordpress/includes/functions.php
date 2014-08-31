@@ -47,6 +47,10 @@ function hcfw_find_and_replace_cards($content){
     $data_hcfw_width = '200';
     $data_hcfw_height = '303';
 
+    // Load user settings: Customizations
+    $hcfw_colored_card_names = get_option('hcfw_colored_card_names');
+    $hcfw_bold_links = get_option('hcfw_bold_links');
+
     // Read json file
     $json_file = HCFW_PATH . 'includes/lib/AllSets.' . $json_lang . '.json';
 
@@ -63,12 +67,29 @@ function hcfw_find_and_replace_cards($content){
 
         foreach ($json_a as $key => $value){
 
-
             foreach($value as $sub) {
 
                 if(isset($sub['cost'])) {
 
-                    $newName = '<a class="hcfw-card" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '">' . $sub['name'] . '</a>';
+                    // Setup classes
+                    $classes = 'hcfw-card';
+
+                    if($hcfw_colored_card_names == 1) {
+                        $classes .= ' hcfw-card-rarity-' . $sub['rarity'];
+                    }
+
+                    if($hcfw_bold_links == 1) {
+                        $classes .= ' hcfw-bold';
+                    }
+
+                    // Setup link
+                    $newName = '<a class="' . $classes . '"
+                                data-hcfw-card-id="' . $sub['id'] . '"
+                                data-hcfw-lang="'.$data_hcfw_lang.'"
+                                data-hcfw-width="'.$data_hcfw_width.'"
+                                data-hcfw-height="'.$data_hcfw_height.'"
+                                href="#" title="' . $sub['name'] . '"
+                                >' . $sub['name'] . '</a>';
 
                     $hearthstoneCards[$sub['name']] = $newName;
                     $hearthstoneShortcodes[$sub['name']] = '[' . $sub['name'] . ']';
@@ -86,20 +107,4 @@ function hcfw_find_and_replace_cards($content){
 if(HCFW_ACTIVE) {
     add_filter('the_content', 'hcfw_find_and_replace_cards');
     add_filter('the_excerpt', 'hcfw_find_and_replace_cards');
-}
-
-function file_get_contents_curl($url) {
-    $ch = curl_init();
-
-    curl_setopt($ch, CURLOPT_AUTOREFERER, TRUE);
-    curl_setopt($ch, CURLOPT_HEADER, 0);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 2);
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-
-    $data = curl_exec($ch);
-    curl_close($ch);
-
-    return $data;
 }
