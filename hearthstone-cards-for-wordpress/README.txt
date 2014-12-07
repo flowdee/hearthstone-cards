@@ -3,8 +3,8 @@ Contributors: flowdee
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCQRWXARSHQTW
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip
 Requires at least: 3.5.1
-Tested up to: 3.9.1
-Stable tag: 1.4
+Tested up to: 4.0.1
+Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,9 +20,8 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 *   Supporting the following card languages: English, French, German, Russian & Spanish
 *   Show colored card names according to their rarity
 *   Configuration page for more options
-*   Try out the online [demo](http://coder.flowdee.de/hearthstone-cards-for-wordpress/demo/)
-*   Well prepared and detailed [Documentation](http://coder.flowdee.de/hearthstone-cards-for-wordpress/documentation/)
-*   Enjoy the helpful and reliable community within the [Support Forum](http://coder.flowdee.de/forums/)
+*   Try out the online [demo](http://flowdee.ticksy.com/faq/2804)
+*   Well prepared and detailed [Documentation](http://flowdee.ticksy.com/faq/2803)
 *   Regular updates and improvements
 
 = How to display Hearthstone Cards =
@@ -40,7 +39,7 @@ Basically take care of using correct special character according to your selecte
 = Support =
 
 * Browse [issue tracker](https://github.com/flowdee/hearthstone-cards-for-wordpress/issues) on GitHub
-* Visit the official [Support forum](http://coder.flowdee.de/forum/)
+* [Follow me on Twitter](https://twitter.com/flowdee) to stay in contact and informed
 
 = Donations =
 
@@ -133,6 +132,9 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Changelog ==
 
+= Version 1.5 (7th December 2014) =
+* New: Added Goblins vs Gnomes cards!
+
 = Version 1.4 (31th August 2014) =
 * New: Added colored card names (optional)
 * New: Added bold card links (optional)
@@ -167,4 +169,4 @@ Yes of course. Please install the plugin via the network administration but **do
 * Naxxramas cards
 
 = Version 1.0 (11th July 2014) =
-* Initial release
+* Initial releasehearthstone-cards-for-wordpress.php

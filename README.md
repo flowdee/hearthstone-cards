@@ -14,9 +14,8 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 * Supporting the following card languages: English, French, German, Russian & Spanish
 * Show colored card names according to their rarity
 * Configuration page for more options
-* Try out the online [demo](http://coder.flowdee.de/hearthstone-cards-for-wordpress/demo/)
-* Well prepared and detailed [Documentation](http://coder.flowdee.de/hearthstone-cards-for-wordpress/documentation/)
-* Enjoy the helpful and reliable community within the [Support Forum](http://coder.flowdee.de/forum/)
+* Try out the online [demo](http://flowdee.ticksy.com/faq/2804)
+* Well prepared and detailed [Documentation](http://flowdee.ticksy.com/faq/2803)
 * Regular updates and improvements
 
 ## How to display Hearthstone Cards
@@ -73,7 +72,7 @@ More features: Currently we are working on more features for this option page. B
 ## Support
 
 * Browse [issue tracker](https://github.com/flowdee/hearthstone-cards-for-wordpress/issues) on GitHub
-* Visit the official [Support forum](http://coder.flowdee.de/forum/)
+* [Follow me on Twitter](https://twitter.com/flowdee) to stay in contact and informed
 
 ## Donations
 
@@ -82,6 +81,9 @@ All of my plugins & themes are handmade with passion. I really looking forward t
 [![Donate via PayPal](http://cdn.flowdee.de/assets/button-paypal-small.gif "Donate via PayPal")](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCQRWXARSHQTW)
 
 ## Changelog
+
+#### Version 1.5 (7th December 2014)
+* New: Added Goblins vs Gnomes cards!
 
 #### Version 1.4 (31th August 2014)
 * New: Added colored card names (optional)
