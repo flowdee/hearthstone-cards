@@ -1,47 +1,57 @@
 /* This stylesheet is used to style the public-facing components of the plugin. */
-.hcfw-card {
+a.hcfw-card {
     position: relative;
 }
 
-.hcfw-overlay {
+div.hcfw-overlay {
     display: none;
     position: absolute;
     left: 0;
     top: 0;
+    top: 20px;
+    left: 50px;
+    /*bottom: 15px;
+    left: 25px;*/
     z-index: 99;
 }
 
-.hcfw-overlay.active {
+@media(max-width: 768px) {
+    div.hcfw-overlay {
+        left: -50px;
+    }
+}
+
+a.hcfw-card.active > div.hcfw-overlay {
     display: block;
 }
 
 /* Customizations */
-.hcfw-bold {
-    font-weight: bold;
+a.hcfw-bold {
+    font-weight: bold !important;
 }
 
 /* Rarity */
-.hcfw-card-rarity-Free,
-.hcfw-card-rarity-Free:hover {
-    color: #000;
+a.hcfw-card-rarity-Free,
+a.hcfw-card-rarity-Free:hover {
+    color: #000 !important;
 }
 
-.hcfw-card-rarity-Common,
-.hcfw-card-rarity-Common:hover {
-    color: #0faf03;
+a.hcfw-card-rarity-Common,
+a.hcfw-card-rarity-Common:hover {
+    color: #0faf03 !important;
 }
 
-.hcfw-card-rarity-Rare,
-.hcfw-card-rarity-Rare:hover {
-    color: #198eff;
+a.hcfw-card-rarity-Rare,
+a.hcfw-card-rarity-Rare:hover {
+    color: #198eff !important;
 }
 
-.hcfw-card-rarity-Epic,
-.hcfw-card-rarity-Epic:hover {
-    color: #ab48ee;
+a.hcfw-card-rarity-Epic,
+a.hcfw-card-rarity-Epic:hover {
+    color: #ab48ee !important;
 }
 
-.hcfw-card-rarity-Legendary,
-.hcfw-card-rarity-Legendary:hover {
-    color: #f07000;
+a.hcfw-card-rarity-Legendary,
+a.hcfw-card-rarity-Legendary:hover {
+    color: #f07000 !important;
 }

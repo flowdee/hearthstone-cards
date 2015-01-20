@@ -5,7 +5,7 @@
  * @package   Hearthstone_Cards_for_WordPress
  * @author    flowdee <support@flowdee.de>
  * @link      http://www.flowdee.de
- * @copyright 2014 flowdee
+ * @copyright 2015 flowdee
  */
 
 // If uninstall not called from WordPress, then exit

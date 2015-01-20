@@ -1,10 +1,10 @@
 === Hearthstone Cards for WordPress ===
 Contributors: flowdee
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCQRWXARSHQTW
-Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip
+Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards
 Requires at least: 3.5.1
-Tested up to: 4.0.1
-Stable tag: 1.5
+Tested up to: 4.1
+Stable tag: 1.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,36 +20,25 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 *   Supporting the following card languages: English, French, German, Russian & Spanish
 *   Show colored card names according to their rarity
 *   Configuration page for more options
-*   Try out the online [demo](http://flowdee.ticksy.com/faq/2804)
-*   Well prepared and detailed [Documentation](http://flowdee.ticksy.com/faq/2803)
-*   Regular updates and improvements
+*   Visit the [plugin page](http://coder.flowdee.de/hearthstone-cards-for-wordpress/)
+*   Try out the online [demo](http://coder.flowdee.de/hearthstone-cards-for-wordpress/demo/)
+*   Well prepared and detailed [documentation](http://coder.flowdee.de/hearthstone-cards-for-wordpress/documentation/)
+*   Regular updates and improvements: Go though the [changelog](http://coder.flowdee.de/hearthstone-cards-for-wordpress/changelog/)
 
 = How to display Hearthstone Cards =
-Update 1.2 comes along with a usability rebuild to improve reliable card name detection.
-
-**Please use e.g. [Druid of the Claw] to convert your card names within your WordPress pages or posts.**
+Please use e.g. [Druid of the Claw] to convert your card names within your WordPress pages or posts.
 
 Basically take care of using correct special character according to your selected language.
 
-= Planned enhancements =
-
-*   Providing a multilingual option page (feel to contact me with your translations)
-*   Supporting three card sizes: Small, Medium & Large
-
 = Support =
 
+* Read the [documentation](http://coder.flowdee.de/hearthstone-cards-for-wordpress/documentation/)
 * Browse [issue tracker](https://github.com/flowdee/hearthstone-cards-for-wordpress/issues) on GitHub
 * [Follow me on Twitter](https://twitter.com/flowdee) to stay in contact and informed
 
-= Donations =
-
-All of my plugins & themes are handmade with passion. I really looking forward to your feedback and suggestions. If you like my work and want to support me, I would be very happy to receive a kind gesture. Thanks right now!
-
-*   [via PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCQRWXARSHQTW)
-
 = Credits =
 
-*   Card images provided through the awesome [Hearthhead.com](www.hearthhead.com/) database
+*   Card images provided through the awesome [Hearthhead.com](http://www.hearthhead.com/) database
 
 == Installation ==
 
@@ -121,6 +110,8 @@ Here you can enable bold card links.
 
 The plugin searches for Hearthstone card names within brackets e.g. [Druid of the Claw] and automatically adds an overlay to them.
 
+Basically take care of using correct special character according to your selected language.
+
 = Multisite supported? =
 
 Yes of course. Please install the plugin via the network administration but **don't activate for network**! Activate the plugin for each single blog instead.
@@ -131,6 +122,14 @@ Yes of course. Please install the plugin via the network administration but **do
 2. Hearthstone Cards overlay in action
 
 == Changelog ==
+
+= Version 1.5.1 (23th January 2015) =
+* Rebuild plugin structure
+* Updated configuration page
+* Fix: Overlay position for a better usability
+* Fix: Colored card names didn't show up properly
+* New: Support for mobile devices
+* New: Support for multilingual options page: [Send](https://github.com/flowdee/support/) me your translations
 
 = Version 1.5 (7th December 2014) =
 * New: Added Goblins vs Gnomes cards!
@@ -153,6 +152,17 @@ Yes of course. Please install the plugin via the network administration but **do
 * Initial release
 
 == Upgrade Notice ==
+
+= Version 1.5.1 (23th January 2015) =
+* Rebuild plugin structure
+* Updated configuration page
+* Fix: Overlay position for a better usability
+* Fix: Colored card names didn't show up properly
+* New: Support for mobile devices
+* New: Support for multilingual options page: [Send](https://github.com/flowdee/support/) me your translations
+
+= Version 1.5 (7th December 2014) =
+* New: Added Goblins vs Gnomes cards!
 
 = Version 1.4 (31th August 2014) =
 * New: Added colored card names (optional)

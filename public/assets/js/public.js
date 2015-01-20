@@ -13,14 +13,16 @@
         });
 
         $('.hcfw-card').hover(function(e){
-            $( this ).find( ".hcfw-overlay:last" ).addClass("active");
+            $( this ).addClass("active");
         }, function() {
-            $( this ).find( ".hcfw-overlay:last" ).removeClass("active");
+            $( this ).removeClass("active");
         });
 
 
         $(".hcfw-card").click(function(e){
             e.preventDefault();
+
+            $( this).toggleClass("active");
         });
 
     });

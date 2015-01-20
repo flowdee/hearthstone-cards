@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name.
+ * Hearthstone Cards for WordPress.
  *
  * @package   Hearthstone_Cards_for_WordPress
  * @author    flowdee <support@flowdee.de>
  * @link      http://www.flowdee.de
- * @copyright 2014 flowdee
+ * @copyright 2015 flowdee
  */
 
 /**
@@ -27,7 +27,7 @@ class Hearthstone_Cards_for_WordPress {
 	 *
 	 * @var     string
 	 */
-	const VERSION = '1.0';
+	const VERSION = '1.5.1';
 
 	/**
 	 * Unique identifier for your plugin.
