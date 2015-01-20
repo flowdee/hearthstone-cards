@@ -126,8 +126,10 @@ Yes of course. Please install the plugin via the network administration but **do
 = Version 1.5.1 (23th January 2015) =
 * Rebuild plugin structure
 * Updated configuration page
+* Performance improvements
 * Fix: Overlay position for a better usability
 * Fix: Colored card names didn't show up properly
+* Fix: Inverted comma work correctly now
 * New: Support for mobile devices
 * New: Support for multilingual options page: [Send](https://github.com/flowdee/support/) me your translations
 
@@ -156,8 +158,10 @@ Yes of course. Please install the plugin via the network administration but **do
 = Version 1.5.1 (23th January 2015) =
 * Rebuild plugin structure
 * Updated configuration page
+* Performance improvements
 * Fix: Overlay position for a better usability
 * Fix: Colored card names didn't show up properly
+* Fix: Inverted comma work correctly now
 * New: Support for mobile devices
 * New: Support for multilingual options page: [Send](https://github.com/flowdee/support/) me your translations
 

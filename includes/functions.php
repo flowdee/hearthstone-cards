@@ -1,6 +1,13 @@
 <?php
-// Search & Replace Card Names
-function hcfw_find_and_replace_cards($content){
+
+function hcfw_get_replacements(){
+    static $replace;
+
+    if (is_array($replace)) {
+        return $replace;
+    }
+
+    $replace = array();
 
     // Load user settings: Language
     $hcfw_language = get_option('hcfw_language');
@@ -55,15 +62,12 @@ function hcfw_find_and_replace_cards($content){
     $json_file = HCFW_PATH . 'includes/lib/AllSets.' . $json_lang . '.json';
 
     // Read json file
-    $string = wp_remote_fopen($json_file);
+    $string = file_get_contents($json_file);
 
     if(isset($string) && !empty($string)) {
 
         // Prepare content
         $json_a = json_decode($string,true);
-
-        $hearthstoneShortcodes = array();
-        $hearthstoneCards = array();
 
         foreach ($json_a as $key => $value){
 
@@ -91,19 +95,28 @@ function hcfw_find_and_replace_cards($content){
                                 href="#" title="' . $sub['name'] . '"
                                 >' . $sub['name'] . '</a>';
 
-                    $hearthstoneCards[$sub['name']] = $newName;
-                    $hearthstoneShortcodes[$sub['name']] = '[' . $sub['name'] . ']';
+                    $replace['[' . $sub['name'] . ']'] = $newName;
+                    $replace['[' . htmlentities($sub['name'], ENT_COMPAT, 'UTF-8') . ']'] = $newName;
+                    $replace['[' . str_replace("'", '&#8217;', $sub['name']) . ']'] = $newName;
                 }
             }
         }
-
-        $content = str_replace(array_values($hearthstoneShortcodes), $hearthstoneCards, $content);
     }
+
+    return $replace;
+}
+
+// Search & Replace Card Names
+function hcfw_find_and_replace_cards($content){
+
+    $replace = hcfw_get_replacements();
+
+    $content = strtr($content, $replace);
 
     return $content;
 }
 
-// WP-Filter für den Inhalt und den Exerpt (Inhalts-Auszug)
+// Filter
 if(HCFW_ACTIVE) {
     add_filter('the_content', 'hcfw_find_and_replace_cards');
     add_filter('the_excerpt', 'hcfw_find_and_replace_cards');
