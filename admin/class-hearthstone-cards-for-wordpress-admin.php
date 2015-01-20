@@ -168,7 +168,7 @@ class Hearthstone_Cards_for_WordPress_Admin {
 	 * @since    1.0
 	 */
 	public function display_plugin_admin_page() {
-		include_once( 'views/admin.php' );
+		include_once('views/admin.php');
 	}
 
 	/**
