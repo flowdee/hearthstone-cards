@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards
 Requires at least: 3.5.1
 Tested up to: 4.1
-Stable tag: 1.5.2
+Stable tag: 1.5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -123,7 +123,7 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Changelog ==
 
-= Version 1.5.2 (8th February 2015) =
+= Version 1.5.3 (8th February 2015) =
 * Updated assets (screenshots and plugin directory banner)
 * New: Portuguese (Brazil) language support
 
@@ -159,7 +159,7 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Upgrade Notice ==
 
-= Version 1.5.2 (8th February 2015) =
+= Version 1.5.3 (8th February 2015) =
 * Updated assets (screenshots and plugin directory banner)
 * New: Portuguese (Brazil) language support
 

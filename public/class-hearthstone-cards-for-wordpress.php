@@ -27,7 +27,7 @@ class Hearthstone_Cards_for_WordPress {
 	 *
 	 * @var     string
 	 */
-	const VERSION = '1.5.1';
+	const VERSION = '1.5.3';
 
 	/**
 	 * Unique identifier for your plugin.
