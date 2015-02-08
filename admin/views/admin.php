@@ -62,6 +62,7 @@ $hcfw_bold_links = get_option('hcfw_bold_links');
                                                         <option<?php if($hcfw_language == 'deDE') echo ' selected="selected"'; ?> value="deDE"><?php _e( 'German', 'hcfw' ); ?></option>
                                                         <option<?php if($hcfw_language == 'ruRU') echo ' selected="selected"'; ?> value="ruRU"><?php _e( 'Russian', 'hcfw' ); ?></option>
                                                         <option<?php if($hcfw_language == 'esES') echo ' selected="selected"'; ?> value="esES"><?php _e( 'Spanish', 'hcfw' ); ?></option>
+                                                        <option<?php if($hcfw_language == 'ptBR') echo ' selected="selected"'; ?> value="ptBR"><?php _e( 'Portuguese (Brazil)', 'hcfw' ); ?></option>
                                                     </select>
                                                 </fieldset>
                                             </td>

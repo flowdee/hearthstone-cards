@@ -40,6 +40,11 @@ function hcfw_get_replacements(){
                 $data_hcfw_lang = 'eses';
                 break;
 
+            case ("ptBR"):
+                $json_lang = 'ptBR';
+                $data_hcfw_lang = 'ptbr';
+                break;
+
             default:
                 $json_lang = 'enUS';
                 $data_hcfw_lang = 'enus';
