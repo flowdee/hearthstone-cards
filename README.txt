@@ -3,8 +3,8 @@ Contributors: flowdee
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCQRWXARSHQTW
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards
 Requires at least: 3.5.1
-Tested up to: 4.1
-Stable tag: 1.5.3
+Tested up to: 4.1.1
+Stable tag: 1.5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -123,6 +123,9 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Changelog ==
 
+= Version 1.6 (3rd April 2015) =
+* New: Added Blackrock Mountain cards!
+
 = Version 1.5.3 (8th February 2015) =
 * Updated assets (screenshots and plugin directory banner)
 * New: Portuguese (Brazil) language support
@@ -135,7 +138,7 @@ Yes of course. Please install the plugin via the network administration but **do
 * Fix: Colored card names didn't show up properly
 * Fix: Inverted comma work correctly now
 * New: Support for mobile devices
-* New: Support for multilingual options page: [Send](https://github.com/flowdee/support/) me your translations
+* New: Support for multilingual options page: [Send](http://coder.flowdee.de/contact/) me your translations
 
 = Version 1.5 (7th December 2014) =
 * New: Added Goblins vs Gnomes cards!
@@ -158,6 +161,9 @@ Yes of course. Please install the plugin via the network administration but **do
 * Initial release
 
 == Upgrade Notice ==
+
+= Version 1.6 (3rd April 2015) =
+* New: Added Blackrock Mountain cards!
 
 = Version 1.5.3 (8th February 2015) =
 * Updated assets (screenshots and plugin directory banner)
