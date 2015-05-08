@@ -92,13 +92,7 @@ function hcfw_get_replacements(){
                     }
 
                     // Setup link
-                    $newName = '<a class="' . $classes . '"
-                                data-hcfw-card-id="' . $sub['id'] . '"
-                                data-hcfw-lang="'.$data_hcfw_lang.'"
-                                data-hcfw-width="'.$data_hcfw_width.'"
-                                data-hcfw-height="'.$data_hcfw_height.'"
-                                href="#" title="' . $sub['name'] . '"
-                                >' . $sub['name'] . '</a>';
+                    $newName = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '">' . $sub['name'] . '</a>';
 
                     $replace['[' . $sub['name'] . ']'] = $newName;
                     $replace['[' . htmlentities($sub['name'], ENT_COMPAT, 'UTF-8') . ']'] = $newName;

@@ -3,8 +3,8 @@ Contributors: flowdee
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCQRWXARSHQTW
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards
 Requires at least: 3.5.1
-Tested up to: 4.1.1
-Stable tag: 1.5.4
+Tested up to: 4.2.2
+Stable tag: 1.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,8 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 
 = Features =
 
-*   Use brackets e.g. [Druid of the Claw] to convert your card names within your WordPress pages or posts
+*   Use brackets e.g. [Druid of the Claw] to convert your card names
+*   Supporting: Posts, Pages & Custom Post Types
 *   Adding overlay and displays the associated image while hovering card names
 *   Supporting the following card languages: English, French, German, Russian & Spanish
 *   Show colored card names according to their rarity
@@ -24,6 +25,17 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 *   Try out the online [demo](http://coder.flowdee.de/hearthstone-cards-for-wordpress/demo/)
 *   Well prepared and detailed [documentation](http://coder.flowdee.de/hearthstone-cards-for-wordpress/documentation/)
 *   Regular updates and improvements: Go though the [changelog](http://coder.flowdee.de/hearthstone-cards-for-wordpress/changelog/)
+
+> <strong>Upgrade to PRO Version</strong><br>
+> Extending the free version with support for:
+>
+> - Comments<br>
+> - bbPress Posts/Topics<br>
+> - Page Builder<br>
+> - BuddyPress<br>
+> - Text Widgets<br>
+>
+> [Get PRO Version now!](http://coder.flowdee.de/hearthstone-cards-for-wordpress/)
 
 = How to display Hearthstone Cards =
 Please use e.g. [Druid of the Claw] to convert your card names within your WordPress pages or posts.
@@ -123,7 +135,10 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Changelog ==
 
-= Version 1.6 (3rd April 2015) =
+= Version 1.6.1 (7th May 2015) =
+* Fix: Broken html replacement
+
+= Version 1.6.0 (3rd April 2015) =
 * New: Added Blackrock Mountain cards!
 
 = Version 1.5.3 (8th February 2015) =
@@ -162,7 +177,10 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Upgrade Notice ==
 
-= Version 1.6 (3rd April 2015) =
+= Version 1.6.1 (7th May 2015) =
+* Fix: Broken html replacement
+
+= Version 1.6.0 (3rd April 2015) =
 * New: Added Blackrock Mountain cards!
 
 = Version 1.5.3 (8th February 2015) =
