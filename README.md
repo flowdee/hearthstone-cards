@@ -7,7 +7,7 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 
 [Official WordPress.org Plugin](http://wordpress.org/plugins/hearthstone-cards/)
 
-## Upgrade to PRO Version
+## Upgrade to PRO Version for only 9 EUR
 Extending the free version with support for:
 
 * Comments
