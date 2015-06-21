@@ -1,10 +1,10 @@
 === Hearthstone Cards for WordPress ===
 Contributors: flowdee
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCQRWXARSHQTW
-Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards
+Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
 Tested up to: 4.2.2
-Stable tag: 1.7.0
+Stable tag: 1.8.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,10 +15,11 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 
 = Features =
 
-*   Use brackets e.g. [Druid of the Claw] to convert your card names
+*   Use brackets e.g. [Flamewaker] or [Flamewaker gold] to convert your card names
 *   Supporting: Posts, Pages & Custom Post Types
 *   Adding overlay and displays the associated image while hovering card names
 *   Supporting the following card languages: English, French, German, Russian, Spanish & Portuguese (Brazil)
+*   Standard and gold (premium) card images available
 *   Show colored card names according to their rarity
 *   Configuration page for more options
 *   Visit the [plugin page](http://coder.flowdee.de/hearthstone-cards-for-wordpress/)
@@ -38,7 +39,7 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 > [Get PRO Version now!](http://coder.flowdee.de/hearthstone-cards-for-wordpress/)
 
 = How to display Hearthstone Cards =
-Please use e.g. [Druid of the Claw] to convert your card names within your WordPress pages or posts.
+Please use e.g. [Flamewaker] or [Flamewaker gold] to convert your card names within your WordPress pages or posts.
 
 Basically take care of using correct special character according to your selected language.
 
@@ -136,7 +137,8 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Changelog ==
 
-= Version 1.7.0 (21th June 2015) =
+= Version 1.8.0 (21th June 2015) =
+* New: Added support for gold (premium) cards: e.g. [Flamewaker gold]
 * New: Added Tavern Brawl cards!
 
 = Version 1.6.2 (4th June 2015) =
@@ -183,6 +185,10 @@ Yes of course. Please install the plugin via the network administration but **do
 * Initial release
 
 == Upgrade Notice ==
+
+= Version 1.8.0 (21th June 2015) =
+* New: Added support for gold (premium) cards: e.g. [Flamewaker gold]
+* New: Added Tavern Brawl cards!
 
 = Version 1.6.2 (4th June 2015) =
 * Minor updates
