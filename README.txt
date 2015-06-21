@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards
 Requires at least: 3.5.1
 Tested up to: 4.2.2
-Stable tag: 1.6.2
+Stable tag: 1.7.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -18,7 +18,7 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 *   Use brackets e.g. [Druid of the Claw] to convert your card names
 *   Supporting: Posts, Pages & Custom Post Types
 *   Adding overlay and displays the associated image while hovering card names
-*   Supporting the following card languages: English, French, German, Russian & Spanish
+*   Supporting the following card languages: English, French, German, Russian, Spanish & Portuguese (Brazil)
 *   Show colored card names according to their rarity
 *   Configuration page for more options
 *   Visit the [plugin page](http://coder.flowdee.de/hearthstone-cards-for-wordpress/)
@@ -101,6 +101,7 @@ In order to use the card language of your choice the plugin comes along with sup
 *   German
 *   Russian
 *   Spanish
+*   Portuguese (Brazil)
 
 = Colored card names =
 Here you can enable colored card names according to their rarity.
@@ -134,6 +135,9 @@ Yes of course. Please install the plugin via the network administration but **do
 2. Hearthstone Cards overlay in action
 
 == Changelog ==
+
+= Version 1.7.0 (21th June 2015) =
+* New: Added Tavern Brawl cards!
 
 = Version 1.6.2 (4th June 2015) =
 * Minor updates
