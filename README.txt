@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
 Tested up to: 4.2.2
-Stable tag: 1.8.0
+Stable tag: 1.8.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -137,6 +137,10 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Changelog ==
 
+= Version 1.8.1 (24th June 2015) =
+* Fix: Plugin will no longer execute within feeds
+* https friendly image implementation
+
 = Version 1.8.0 (21th June 2015) =
 * New: Added support for gold (premium) cards: e.g. [Flamewaker gold]
 * New: Added Tavern Brawl cards!
@@ -185,6 +189,10 @@ Yes of course. Please install the plugin via the network administration but **do
 * Initial release
 
 == Upgrade Notice ==
+
+= Version 1.8.1 (24th June 2015) =
+* Fix: Plugin will no longer execute within feeds
+* https friendly image implementation
 
 = Version 1.8.0 (21th June 2015) =
 * New: Added support for gold (premium) cards: e.g. [Flamewaker gold]
