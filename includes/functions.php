@@ -116,6 +116,9 @@ function hcfw_get_replacements(){
 // Search & Replace Card Names
 function hcfw_find_and_replace_cards($content){
 
+    if( is_feed() )
+        return $content;
+
     $replace = hcfw_get_replacements();
 
     $content = strtr($content, $replace);
