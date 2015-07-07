@@ -24,7 +24,7 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 *   Visit the [plugin page](http://coder.flowdee.de/hearthstone-cards-for-wordpress/)
 *   Try out the online [demo](http://coder.flowdee.de/hearthstone-cards-for-wordpress/demo/)
 *   Well prepared and detailed [documentation](http://coder.flowdee.de/hearthstone-cards-for-wordpress/documentation/)
-*   Regular updates and improvements: Go though the [changelog](http://coder.flowdee.de/hearthstone-cards-for-wordpress/changelog/)
+*   Regular updates and improvements: Go though the [changelog](https://wordpress.org/plugins/hearthstone-cards/changelog/)
 
 > <strong>Upgrade to PRO Version for only 9 EUR</strong><br>
 > Extending the free version with support for:
@@ -78,55 +78,16 @@ The installation and configuration of the plugin is as simple as it can be.
 3. Upload the `hearthstone-cards-for-wordpress` directory to the `/wp-content/plugins/` directory
 4. Activate the plugin in the Plugin dashboard
 
-== Configuration ==
-The plugin is really simple and well structured so you don’t have to prepare a lot in order to get it working.
-
-1. After the successful installation you will find a prepared options page here: “Settings” > “Hearthstone Cards”
-2. Here you can temporary deactivate the Hearthstone Cards feature if necessary
-3. Some customization settings can be found within left metabox and described below
-4. Additionally you can find more essential and helpful links within the metaboxes on your right
-5. Use brackets e.g. [Druid of the Claw] to convert your card names within your WordPress pages or posts
-
-= Show cards =
-Here you can temporary enable or disable the Hearthstone Cards function. At first you should enable the feature by clicking the checkbox.
-
-*   “Checked” – The Hearthstone Cards plugin works as described
-*   “Unchecked” – Temporary disabled and no cards will be shown. (Default)
-
-= Language of cards =
-In order to use the card language of your choice the plugin comes along with support for a few languages. Please choose the language your page is running respectively you need to be displayed.
-
-*   English (Default)
-*   French
-*   German
-*   Russian
-*   Spanish
-*   Portuguese (Brazil)
-
-= Colored card names =
-Here you can enable colored card names according to their rarity.
-
-* “Checked” – Colored card names enabled
-* “Unchecked” – Colored card names disabled (Default)
-
-= Bold card links =
-Here you can enable bold card links.
-
-* “Checked” – Bold card links enabled
-* “Unchecked” – Bold card links disabled (Default)
-
-**More features:** Currently we are working on more features for this option page. Be excited!
-
 == Frequently Asked Questions ==
 
 = How does the plugin work? =
-
 The plugin searches for Hearthstone card names within brackets e.g. [Druid of the Claw] and automatically adds an overlay to them.
-
 Basically take care of using correct special character according to your selected language.
 
-= Multisite supported? =
+= How to display a golden card? =
+Simply add a space character followed by the word "gold": e.g. [Flamewaker gold]
 
+= Multisite supported? =
 Yes of course. Please install the plugin via the network administration but **don't activate for network**! Activate the plugin for each single blog instead.
 
 == Screenshots ==
