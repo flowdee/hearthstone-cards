@@ -130,4 +130,15 @@ function hcfw_find_and_replace_cards($content){
 if(HCFW_ACTIVE) {
     add_filter('the_content', 'hcfw_find_and_replace_cards');
     add_filter('the_excerpt', 'hcfw_find_and_replace_cards');
+
+    // Page Builder & Widgets
+    add_filter('widget_text', 'hcfw_find_and_replace_cards');
+    // Comments
+    add_filter('comment_text', 'hcfw_find_and_replace_cards');
+    // bbPress
+    add_filter('bbp_get_topic_content', 'hcfw_find_and_replace_cards');
+    add_filter('bbp_get_reply_content', 'hcfw_find_and_replace_cards');
+    // BuddyPress
+    add_filter('bp_get_activity_content_body', 'hcfw_find_and_replace_cards');
+    add_filter('bp_get_the_thread_message_content', 'hcfw_find_and_replace_cards');
 }

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
 Tested up to: 4.2.2
-Stable tag: 1.8.1
+Stable tag: 2.0.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -16,7 +16,7 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 = Features =
 
 *   Use brackets e.g. [Flamewaker] or [Flamewaker gold] to convert your card names
-*   Supporting: Posts, Pages & Custom Post Types
+*   Supporting: Posts, Pages, Custom Post Types, Comments, bbPress, Page Builder, BuddyPress & Text Widgets
 *   Adding overlay and displays the associated image while hovering card names
 *   Supporting the following card languages: English, French, German, Russian, Spanish & Portuguese (Brazil)
 *   Standard and gold (premium) card images available
@@ -26,17 +26,6 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 *   Try out the online [demo](http://coder.flowdee.de/hearthstone-cards-for-wordpress/demo/)
 *   Well prepared and detailed [documentation](http://coder.flowdee.de/hearthstone-cards-for-wordpress/documentation/)
 *   Regular updates and improvements: Go though the [changelog](http://coder.flowdee.de/hearthstone-cards-for-wordpress/changelog/)
-
-> <strong>Upgrade to PRO Version for only 9 EUR</strong><br>
-> Extending the free version with support for:
->
-> - Comments<br>
-> - bbPress Posts/Topics<br>
-> - Page Builder<br>
-> - BuddyPress<br>
-> - Text Widgets<br>
->
-> [Get PRO Version now!](http://coder.flowdee.de/hearthstone-cards-for-wordpress/)
 
 = How to display Hearthstone Cards =
 Please use e.g. [Flamewaker] or [Flamewaker gold] to convert your card names within your WordPress pages or posts.
@@ -137,6 +126,9 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Changelog ==
 
+= Version 2.0.0 (17th July 2015) =
+* New: Added support for Comments, bbPress, Page Builder, BuddyPress & Text Widgets
+
 = Version 1.8.1 (24th June 2015) =
 * Fix: Plugin will no longer execute within feeds
 * https friendly image implementation
@@ -189,6 +181,9 @@ Yes of course. Please install the plugin via the network administration but **do
 * Initial release
 
 == Upgrade Notice ==
+
+= Version 2.0.0 (17th July 2015) =
+* New: Added support for Comments, bbPress, Page Builder, BuddyPress & Text Widgets
 
 = Version 1.8.1 (24th June 2015) =
 * Fix: Plugin will no longer execute within feeds
