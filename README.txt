@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
 Tested up to: 4.2.2
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -126,6 +126,9 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Changelog ==
 
+= Version 2.0.1 (18th July 2015) =
+* Fixed minor php notices
+
 = Version 2.0.0 (17th July 2015) =
 * New: Added support for Comments, bbPress, Page Builder, BuddyPress & Text Widgets
 
@@ -181,6 +184,9 @@ Yes of course. Please install the plugin via the network administration but **do
 * Initial release
 
 == Upgrade Notice ==
+
+= Version 2.0.1 (18th July 2015) =
+* Fixed minor php notices
 
 = Version 2.0.0 (17th July 2015) =
 * New: Added support for Comments, bbPress, Page Builder, BuddyPress & Text Widgets

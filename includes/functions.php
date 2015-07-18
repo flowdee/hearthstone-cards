@@ -83,12 +83,17 @@ function hcfw_get_replacements(){
                     // Setup classes
                     $classes = 'hcfw-card';
 
-                    if($hcfw_colored_card_names == 1) {
+                    if($hcfw_colored_card_names == 1 && isset($sub['rarity'])) {
                         $classes .= ' hcfw-card-rarity-' . $sub['rarity'];
                     }
 
                     if($hcfw_bold_links == 1) {
                         $classes .= ' hcfw-bold';
+                    }
+
+                    // Validate data
+                    if(!isset($sub['id']) || !isset($sub['name'])){
+                        continue;
                     }
 
                     // Setup link
