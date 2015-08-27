@@ -3,8 +3,8 @@ Contributors: flowdee
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCQRWXARSHQTW
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
-Tested up to: 4.2.2
-Stable tag: 2.0.1
+Tested up to: 4.3.0
+Stable tag: 2.1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -22,10 +22,8 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 *   Standard and gold (premium) card images available
 *   Show colored card names according to their rarity
 *   Configuration page for more options
-*   Visit the [plugin page](http://coder.flowdee.de/hearthstone-cards-for-wordpress/)
 *   Try out the online [demo](http://coder.flowdee.de/hearthstone-cards-for-wordpress/demo/)
-*   Well prepared and detailed [documentation](http://coder.flowdee.de/hearthstone-cards-for-wordpress/documentation/)
-*   Regular updates and improvements: Go though the [changelog](http://coder.flowdee.de/hearthstone-cards-for-wordpress/changelog/)
+*   Regular updates and improvements: Go though the [changelog](https://wordpress.org/plugins/hearthstone-cards/changelog/)
 
 = How to display Hearthstone Cards =
 Please use e.g. [Flamewaker] or [Flamewaker gold] to convert your card names within your WordPress pages or posts.
@@ -34,9 +32,8 @@ Basically take care of using correct special character according to your selecte
 
 = Support =
 
-* Read the [documentation](http://coder.flowdee.de/hearthstone-cards-for-wordpress/documentation/)
 * Browse [issue tracker](https://github.com/flowdee/hearthstone-cards-for-wordpress/issues) on GitHub
-* [Follow me on Twitter](https://twitter.com/flowdee) to stay in contact and informed
+* [Follow me on Twitter](https://twitter.com/flowdee) to stay in contact and informed about updates
 
 = Credits =
 
@@ -68,50 +65,11 @@ The installation and configuration of the plugin is as simple as it can be.
 3. Upload the `hearthstone-cards-for-wordpress` directory to the `/wp-content/plugins/` directory
 4. Activate the plugin in the Plugin dashboard
 
-== Configuration ==
-The plugin is really simple and well structured so you don’t have to prepare a lot in order to get it working.
-
-1. After the successful installation you will find a prepared options page here: “Settings” > “Hearthstone Cards”
-2. Here you can temporary deactivate the Hearthstone Cards feature if necessary
-3. Some customization settings can be found within left metabox and described below
-4. Additionally you can find more essential and helpful links within the metaboxes on your right
-5. Use brackets e.g. [Druid of the Claw] to convert your card names within your WordPress pages or posts
-
-= Show cards =
-Here you can temporary enable or disable the Hearthstone Cards function. At first you should enable the feature by clicking the checkbox.
-
-*   “Checked” – The Hearthstone Cards plugin works as described
-*   “Unchecked” – Temporary disabled and no cards will be shown. (Default)
-
-= Language of cards =
-In order to use the card language of your choice the plugin comes along with support for a few languages. Please choose the language your page is running respectively you need to be displayed.
-
-*   English (Default)
-*   French
-*   German
-*   Russian
-*   Spanish
-*   Portuguese (Brazil)
-
-= Colored card names =
-Here you can enable colored card names according to their rarity.
-
-* “Checked” – Colored card names enabled
-* “Unchecked” – Colored card names disabled (Default)
-
-= Bold card links =
-Here you can enable bold card links.
-
-* “Checked” – Bold card links enabled
-* “Unchecked” – Bold card links disabled (Default)
-
-**More features:** Currently we are working on more features for this option page. Be excited!
-
 == Frequently Asked Questions ==
 
 = How does the plugin work? =
 
-The plugin searches for Hearthstone card names within brackets e.g. [Druid of the Claw] and automatically adds an overlay to them.
+The plugin searches for Hearthstone card names within brackets e.g. [Druid of the Claw] or [Druid of the Claw gold] and automatically adds an overlay to them.
 
 Basically take care of using correct special character according to your selected language.
 
@@ -126,6 +84,9 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Changelog ==
 
+= Version 2.1.0 (27th August 2015) =
+* New: Added "The Grand Tournament" cards!
+
 = Version 2.0.1 (18th July 2015) =
 * Fixed minor php notices
 
@@ -138,7 +99,7 @@ Yes of course. Please install the plugin via the network administration but **do
 
 = Version 1.8.0 (21th June 2015) =
 * New: Added support for gold (premium) cards: e.g. [Flamewaker gold]
-* New: Added Tavern Brawl cards!
+* New: Added "Tavern Brawl" cards!
 
 = Version 1.6.2 (4th June 2015) =
 * Minor updates
@@ -147,7 +108,7 @@ Yes of course. Please install the plugin via the network administration but **do
 * Fix: Broken html replacement
 
 = Version 1.6.0 (3rd April 2015) =
-* New: Added Blackrock Mountain cards!
+* New: Added "Blackrock Mountain" cards!
 
 = Version 1.5.3 (8th February 2015) =
 * Updated assets (screenshots and plugin directory banner)
@@ -164,7 +125,7 @@ Yes of course. Please install the plugin via the network administration but **do
 * New: Support for multilingual options page: [Send](http://coder.flowdee.de/contact/) me your translations
 
 = Version 1.5 (7th December 2014) =
-* New: Added Goblins vs Gnomes cards!
+* New: Added "Goblins vs Gnomes" cards!
 
 = Version 1.4 (31th August 2014) =
 * New: Added colored card names (optional)
@@ -185,6 +146,9 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Upgrade Notice ==
 
+= Version 2.1.0 (27th August 2015) =
+* New: Added "The Grand Tournament" cards!
+
 = Version 2.0.1 (18th July 2015) =
 * Fixed minor php notices
 
@@ -197,7 +161,7 @@ Yes of course. Please install the plugin via the network administration but **do
 
 = Version 1.8.0 (21th June 2015) =
 * New: Added support for gold (premium) cards: e.g. [Flamewaker gold]
-* New: Added Tavern Brawl cards!
+* New: Added "Tavern Brawl" cards!
 
 = Version 1.6.2 (4th June 2015) =
 * Minor updates
@@ -206,7 +170,7 @@ Yes of course. Please install the plugin via the network administration but **do
 * Fix: Broken html replacement
 
 = Version 1.6.0 (3rd April 2015) =
-* New: Added Blackrock Mountain cards!
+* New: Added "Blackrock Mountain" cards!
 
 = Version 1.5.3 (8th February 2015) =
 * Updated assets (screenshots and plugin directory banner)
@@ -223,7 +187,7 @@ Yes of course. Please install the plugin via the network administration but **do
 * New: Support for multilingual options page: [Send](https://github.com/flowdee/support/) me your translations
 
 = Version 1.5 (7th December 2014) =
-* New: Added Goblins vs Gnomes cards!
+* New: Added "Goblins vs Gnomes" cards!
 
 = Version 1.4 (31th August 2014) =
 * New: Added colored card names (optional)
@@ -237,7 +201,7 @@ Yes of course. Please install the plugin via the network administration but **do
 * Rebuild usability to improve reliable card name detection. Please use e.g. [Druid of the Claw] to convert your card names.
 
 = Version 1.1 (8th August 2014) =
-* Naxxramas cards
+* Added "Naxxramas" cards
 
 = Version 1.0 (11th July 2014) =
-* Initial releasehearthstone-cards-for-wordpress.php
+* Initial release
