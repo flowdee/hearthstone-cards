@@ -1,9 +1,9 @@
 === Hearthstone Cards for WordPress ===
 Contributors: flowdee
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCQRWXARSHQTW
+Donate link: https://www.paypal.me/flowdee
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
-Tested up to: 4.3.0
+Tested up to: 4.3.1
 Stable tag: 2.1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -22,7 +22,7 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 *   Standard and gold (premium) card images available
 *   Show colored card names according to their rarity
 *   Configuration page for more options
-*   Try out the online [demo](http://coder.flowdee.de/hearthstone-cards-for-wordpress/demo/)
+*   Try out the online [demo](https://coder.flowdee.de/hearthstone-cards-for-wordpress/demo/)
 *   Regular updates and improvements: Go though the [changelog](https://wordpress.org/plugins/hearthstone-cards/changelog/)
 
 = How to display Hearthstone Cards =
@@ -83,6 +83,10 @@ Yes of course. Please install the plugin via the network administration but **do
 2. Hearthstone Cards overlay in action
 
 == Changelog ==
+
+= Version 2.1.1 (27th September 2015) =
+* Updated WP.org assets
+* Checked compatibility and bumped version
 
 = Version 2.1.0 (27th August 2015) =
 * New: Added "The Grand Tournament" cards!
@@ -145,6 +149,10 @@ Yes of course. Please install the plugin via the network administration but **do
 * Initial release
 
 == Upgrade Notice ==
+
+= Version 2.1.1 (27th September 2015) =
+* Updated WP.org assets
+* Checked compatibility and bumped version
 
 = Version 2.1.0 (27th August 2015) =
 * New: Added "The Grand Tournament" cards!

@@ -1,7 +1,4 @@
 # Hearthstone Cards for WordPress
-
-![alt text](http://cdn.flowdee.de/assets/plugins/hearthstone-cards-for-wordpress-banner.png "Hearthstone Cards for WordPress")
-
 ## Description
 Hearthstone Cards for WordPress adds an overlay to written card names and displays the associated image while hovering them.
 
