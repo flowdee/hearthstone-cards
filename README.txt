@@ -1,10 +1,10 @@
 === Hearthstone Cards for WordPress ===
 Contributors: flowdee
-Donate link: https://www.paypal.me/flowdee
+Donate link: http://coder.flowdee.de/link/wishlist
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
 Tested up to: 4.3.1
-Stable tag: 2.1.1
+Stable tag: 2.1.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -18,7 +18,7 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 *   Use brackets e.g. [Flamewaker] or [Flamewaker gold] to convert your card names
 *   Supporting: Posts, Pages, Custom Post Types, Comments, bbPress, Page Builder, BuddyPress & Text Widgets
 *   Adding overlay and displays the associated image while hovering card names
-*   Supporting the following card languages: English, French, German, Russian, Spanish & Portuguese (Brazil)
+*   Supporting the following card languages: English, Chinese, French, German, Russian, Spanish & Portuguese (Brazil)
 *   Standard and gold (premium) card images available
 *   Show colored card names according to their rarity
 *   Configuration page for more options
@@ -83,6 +83,10 @@ Yes of course. Please install the plugin via the network administration but **do
 2. Hearthstone Cards overlay in action
 
 == Changelog ==
+
+= Version 2.1.2 (7th November 2015) =
+* New: Added support for Chinese cards
+* Updated existing card sets
 
 = Version 2.1.1 (27th September 2015) =
 * Updated WP.org assets
@@ -149,6 +153,10 @@ Yes of course. Please install the plugin via the network administration but **do
 * Initial release
 
 == Upgrade Notice ==
+
+= Version 2.1.2 (7th November 2015) =
+* New: Added support for Chinese cards
+* Updated existing card sets
 
 = Version 2.1.1 (27th September 2015) =
 * Updated WP.org assets

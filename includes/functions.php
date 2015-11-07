@@ -45,6 +45,11 @@ function hcfw_get_replacements(){
                 $data_hcfw_lang = 'ptbr';
                 break;
 
+            case ("zhCN"):
+                $json_lang = 'zhCN';
+                $data_hcfw_lang = 'zhcn';
+                break;
+
             default:
                 $json_lang = 'enUS';
                 $data_hcfw_lang = 'enus';
@@ -61,6 +66,7 @@ function hcfw_get_replacements(){
 
     // Load user settings: Customizations
     $hcfw_colored_card_names = get_option('hcfw_colored_card_names');
+
     $hcfw_bold_links = get_option('hcfw_bold_links');
 
     // Read json file
