@@ -84,7 +84,7 @@ function hcfw_get_replacements(){
 
             foreach($value as $sub) {
 
-                if(isset($sub['cost'])) {
+                if( isset( $sub['id'] ) && isset( $sub['name'] ) && isset( $sub['text'] ) ) {
 
                     // Setup classes
                     $classes = 'hcfw-card';
@@ -95,11 +95,6 @@ function hcfw_get_replacements(){
 
                     if($hcfw_bold_links == 1) {
                         $classes .= ' hcfw-bold';
-                    }
-
-                    // Validate data
-                    if(!isset($sub['id']) || !isset($sub['name'])){
-                        continue;
                     }
 
                     // Setup link
