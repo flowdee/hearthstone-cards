@@ -1,5 +1,5 @@
 # Hearthstone Cards for WordPress
-![Plugin Version](https://img.shields.io/wordpress/plugin/v/hearthstone-cards.svg "Plugin Version") ![WordPress Version Compatibility](https://img.shields.io/wordpress/v/hearthstone-cards.svg "WordPress Version Compatibility") ![Downloads](https://img.shields.io/wordpress/plugin/dt/hearthstone-cards.svg "Downloads") ![Rating](https://img.shields.io/wordpress/plugin/r/hearthstone-cards.svg "Rating")
+[![Plugin Version](https://img.shields.io/wordpress/plugin/v/hearthstone-cards.svg)](https://wordpress.org/plugins/hearthstone-cards/) [![WordPress Version Compatibility](https://img.shields.io/wordpress/v/hearthstone-cards.svg)](https://wordpress.org/plugins/hearthstone-cards/) [![Downloads](https://img.shields.io/wordpress/plugin/dt/hearthstone-cards.svg)](https://wordpress.org/plugins/hearthstone-cards/) [![Rating](https://img.shields.io/wordpress/plugin/r/hearthstone-cards.svg)](https://wordpress.org/plugins/hearthstone-cards/)
 
 ## Description
 Hearthstone Cards for WordPress adds an overlay to written card names and displays the associated image while hovering them.
