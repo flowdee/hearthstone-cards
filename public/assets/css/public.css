@@ -31,27 +31,27 @@ a.hcfw-bold {
 }
 
 /* Rarity */
-a.hcfw-card-rarity-Free,
-a.hcfw-card-rarity-Free:hover {
+a.hcfw-card-rarity-free,
+a.hcfw-card-rarity-free:hover {
     color: #000 !important;
 }
 
-a.hcfw-card-rarity-Common,
-a.hcfw-card-rarity-Common:hover {
+a.hcfw-card-rarity-common,
+a.hcfw-card-rarity-common:hover {
     color: #0faf03 !important;
 }
 
-a.hcfw-card-rarity-Rare,
-a.hcfw-card-rarity-Rare:hover {
+a.hcfw-card-rarity-rare,
+a.hcfw-card-rarity-rare:hover {
     color: #198eff !important;
 }
 
-a.hcfw-card-rarity-Epic,
-a.hcfw-card-rarity-Epic:hover {
+a.hcfw-card-rarity-epic,
+a.hcfw-card-rarity-epic:hover {
     color: #ab48ee !important;
 }
 
-a.hcfw-card-rarity-Legendary,
-a.hcfw-card-rarity-Legendary:hover {
+a.hcfw-card-rarity-legendary,
+a.hcfw-card-rarity-legendary:hover {
     color: #f07000 !important;
 }

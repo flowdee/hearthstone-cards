@@ -3,8 +3,8 @@ Contributors: flowdee
 Donate link: http://coder.flowdee.de/link/wishlist
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
-Tested up to: 4.3.1
-Stable tag: 2.1.3
+Tested up to: 4.4.0
+Stable tag: 2.2.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -84,6 +84,10 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Changelog ==
 
+= Version 2.2.0 (29th December 2015) =
+* New: Added "League of Explorers" cards!
+* Updated to latest patch v4.1.0.10956
+
 = Version 2.1.3 (7th November 2015) =
 * Fixed card validation which prevents e.g. The Coin from being showed
 
@@ -156,6 +160,10 @@ Yes of course. Please install the plugin via the network administration but **do
 * Initial release
 
 == Upgrade Notice ==
+
+= Version 2.2.0 (29th December 2015) =
+* New: Added "League of Explorers" cards!
+* Updated to latest patch v4.1.0.10956
 
 = Version 2.1.3 (7th November 2015) =
 * Fixed card validation which prevents e.g. The Coin from being showed

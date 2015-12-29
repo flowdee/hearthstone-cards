@@ -1,5 +1,7 @@
 <?php
-
+/*
+ * Build replacements
+ */
 function hcfw_get_replacements(){
     static $replace;
 
@@ -70,7 +72,7 @@ function hcfw_get_replacements(){
     $hcfw_bold_links = get_option('hcfw_bold_links');
 
     // Read json file
-    $json_file = HCFW_PATH . 'includes/lib/AllSets.' . $json_lang . '.json';
+    $json_file = HCFW_PATH . 'includes/lib/' . $json_lang . '/cards.json';
 
     // Read json file
     $string = file_get_contents($json_file);
@@ -80,38 +82,35 @@ function hcfw_get_replacements(){
         // Prepare content
         $json_a = json_decode($string,true);
 
-        foreach ($json_a as $key => $value){
+        foreach ($json_a as $key => $sub){
 
-            foreach($value as $sub) {
+            if( isset( $sub['id'] ) && isset( $sub['name'] ) && isset( $sub['text'] ) ) {
 
-                if( isset( $sub['id'] ) && isset( $sub['name'] ) && isset( $sub['text'] ) ) {
+                // Setup classes
+                $classes = 'hcfw-card';
 
-                    // Setup classes
-                    $classes = 'hcfw-card';
-
-                    if($hcfw_colored_card_names == 1 && isset($sub['rarity'])) {
-                        $classes .= ' hcfw-card-rarity-' . $sub['rarity'];
-                    }
-
-                    if($hcfw_bold_links == 1) {
-                        $classes .= ' hcfw-bold';
-                    }
-
-                    // Setup link
-                    $newName = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '">' . $sub['name'] . '</a>';
-
-                    $replace['[' . $sub['name'] . ']'] = $newName;
-                    $replace['[' . htmlentities($sub['name'], ENT_COMPAT, 'UTF-8') . ']'] = $newName;
-                    $replace['[' . str_replace("'", '&#8217;', $sub['name']) . ']'] = $newName;
-
-                    // Gold cards
-                    $newNameGold = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '" data-hcfw-gold="true">' . $sub['name'] . '</a>';
-
-                    $replace['[' . $sub['name'] . ' gold]'] = $newNameGold;
-                    $replace['[' . htmlentities($sub['name'], ENT_COMPAT, 'UTF-8') . ' gold]'] = $newNameGold;
-                    $replace['[' . str_replace("'", '&#8217;', $sub['name']) . ' gold]'] = $newNameGold;
-
+                if($hcfw_colored_card_names == 1 && isset($sub['rarity'])) {
+                    $classes .= ' hcfw-card-rarity-' . strtolower($sub['rarity']);
                 }
+
+                if($hcfw_bold_links == 1) {
+                    $classes .= ' hcfw-bold';
+                }
+
+                // Setup link
+                $newName = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '">' . $sub['name'] . '</a>';
+
+                $replace['[' . $sub['name'] . ']'] = $newName;
+                $replace['[' . htmlentities($sub['name'], ENT_COMPAT, 'UTF-8') . ']'] = $newName;
+                $replace['[' . str_replace("'", '&#8217;', $sub['name']) . ']'] = $newName;
+
+                // Gold cards
+                $newNameGold = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '" data-hcfw-gold="true">' . $sub['name'] . '</a>';
+
+                $replace['[' . $sub['name'] . ' gold]'] = $newNameGold;
+                $replace['[' . htmlentities($sub['name'], ENT_COMPAT, 'UTF-8') . ' gold]'] = $newNameGold;
+                $replace['[' . str_replace("'", '&#8217;', $sub['name']) . ' gold]'] = $newNameGold;
+
             }
         }
     }
