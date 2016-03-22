@@ -84,7 +84,7 @@ function hcfw_get_replacements(){
 
         foreach ($json_a as $key => $sub){
 
-            if( isset( $sub['id'] ) && isset( $sub['name'] ) && isset( $sub['text'] ) ) {
+            if( isset( $sub['id'] ) && isset( $sub['name'] ) && isset( $sub['type'] ) && 'ENCHANTMENT' != $sub['type'] ) {
 
                 // Setup classes
                 $classes = 'hcfw-card';
