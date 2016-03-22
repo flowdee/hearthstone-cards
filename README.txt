@@ -1,10 +1,10 @@
 === Hearthstone Cards for WordPress ===
 Contributors: flowdee
-Donate link: http://coder.flowdee.de/link/wishlist
+Donate link: http://donate.flowdee.de
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
-Tested up to: 4.4.0
-Stable tag: 2.2.0
+Tested up to: 4.4.2
+Stable tag: 2.2.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -84,6 +84,11 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Changelog ==
 
+= Version 2.2.1 (22th March 2016) =
+* Fixed a bug which prevents some basic cards to be converted
+* Fixed a bug which leads into broken images
+* Updated card database to the latest patch
+
 = Version 2.2.0 (29th December 2015) =
 * New: Added "League of Explorers" cards!
 * Updated to latest patch v4.1.0.10956
@@ -160,6 +165,11 @@ Yes of course. Please install the plugin via the network administration but **do
 * Initial release
 
 == Upgrade Notice ==
+
+= Version 2.2.1 (22th March 2016) =
+* Fixed a bug which prevents some basic cards to be converted
+* Fixed a bug which leads into broken images
+* Updated card database to the latest patch
 
 = Version 2.2.0 (29th December 2015) =
 * New: Added "League of Explorers" cards!
