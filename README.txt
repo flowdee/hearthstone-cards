@@ -3,8 +3,8 @@ Contributors: flowdee
 Donate link: http://donate.flowdee.de
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
-Tested up to: 4.4.2
-Stable tag: 2.2.1
+Tested up to: 4.5.1
+Stable tag: 2.3.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -22,7 +22,7 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 *   Standard and gold (premium) card images available
 *   Show colored card names according to their rarity
 *   Configuration page for more options
-*   Try out the online [demo](https://coder.flowdee.de/hearthstone-cards-for-wordpress/demo/)
+*   Try out the online [demo](https://coder.flowdee.de/hearthstone-cards/demo/)
 *   Regular updates and improvements: Go though the [changelog](https://wordpress.org/plugins/hearthstone-cards/changelog/)
 
 = How to display Hearthstone Cards =
@@ -32,7 +32,7 @@ Basically take care of using correct special character according to your selecte
 
 = Support =
 
-* Browse [issue tracker](https://github.com/flowdee/hearthstone-cards-for-wordpress/issues) on GitHub
+* Browse [issue tracker](https://github.com/flowdee/hearthstone-cards/issues) on GitHub
 * [Follow me on Twitter](https://twitter.com/flowdee) to stay in contact and informed about updates
 
 = Credits =
@@ -46,7 +46,7 @@ The installation and configuration of the plugin is as simple as it can be.
 = Using The WordPress Dashboard =
 
 1. Navigate to the 'Add New' in the plugins dashboard
-2. Search for 'hearthstone-cards-for-wordpress'
+2. Search for 'hearthstone-cards'
 3. Click 'Install Now'
 4. Activate the plugin on the Plugin dashboard
 
@@ -54,15 +54,15 @@ The installation and configuration of the plugin is as simple as it can be.
 
 1. Navigate to the 'Add New' in the plugins dashboard
 2. Navigate to the 'Upload' area
-3. Select `hearthstone-cards-for-wordpress.zip` from your computer
+3. Select `hearthstone-cards.zip` from your computer
 4. Click 'Install Now'
 5. Activate the plugin in the Plugin dashboard
 
 = Using FTP =
 
-1. Download `hearthstone-cards-for-wordpress.zip`
-2. Extract the `hearthstone-cards-for-wordpress` directory to your computer
-3. Upload the `hearthstone-cards-for-wordpress` directory to the `/wp-content/plugins/` directory
+1. Download `hearthstone-cards.zip`
+2. Extract the `hearthstone-cards` directory to your computer
+3. Upload the `hearthstone-cards` directory to the `/wp-content/plugins/` directory
 4. Activate the plugin in the Plugin dashboard
 
 == Frequently Asked Questions ==

@@ -72,7 +72,7 @@ function hcfw_get_replacements(){
     $hcfw_bold_links = get_option('hcfw_bold_links');
 
     // Read json file
-    $json_file = HCFW_PATH . 'includes/lib/' . $json_lang . '/cards.json';
+    $json_file = HCFW_URL . 'includes/lib/' . $json_lang . '/cards.json';
 
     // Read json file
     $string = file_get_contents($json_file);

@@ -2,7 +2,7 @@
 /**
  * Hearthstone Cards for WordPress.
  *
- * @package   Hearthstone_Cards_for_WordPress
+ * @package   Hearthstone_Cards
  * @author    flowdee <support@flowdee.de>
  * @link      http://www.flowdee.de
  * @copyright 2015 flowdee
@@ -13,12 +13,12 @@
  * public-facing side of the WordPress site.
  *
  * If you're interested in introducing administrative or dashboard
- * functionality, then refer to `class-hearthstone-cards-for-wordpress-admin.php`
+ * functionality, then refer to `class-hearthstone-cards-admin.php`
  *
- * @package Hearthstone_Cards_for_WordPress
+ * @package Hearthstone_Cards
  * @author  flowdee <support@flowdee.de>
  */
-class Hearthstone_Cards_for_WordPress {
+class Hearthstone_Cards {
 
 	/**
 	 * Plugin version, used for cache-busting of style and script file references.
@@ -41,7 +41,7 @@ class Hearthstone_Cards_for_WordPress {
 	 *
 	 * @var      string
 	 */
-	protected $plugin_slug = 'hearthstone-cards-for-wordpress';
+	protected $plugin_slug = 'hearthstone-cards';
 
 	/**
 	 * Instance of this class.
@@ -243,12 +243,28 @@ class Hearthstone_Cards_for_WordPress {
 	 */
 	public function load_plugin_textdomain() {
 
-		$domain = $this->plugin_slug;
-		$locale = apply_filters( 'plugin_locale', get_locale(), $domain );
+		// Set filter for plugin's languages directory
+		$lang_dir = HCFW_DIR . '/languages/';
+		$lang_dir = apply_filters( 'hearthstone_cards_languages_directory', $lang_dir );
 
-		load_textdomain( $domain, trailingslashit( WP_LANG_DIR ) . $domain . '/' . $domain . '-' . $locale . '.mo' );
-		load_plugin_textdomain( $domain, FALSE, basename( plugin_dir_path( dirname( __FILE__ ) ) ) . '/languages/' );
+		// Traditional WordPress plugin locale filter
+		$locale   = apply_filters( 'plugin_locale',  get_locale(), 'hearthstone-cards' );
+		$mofile   = sprintf( '%1$s-%2$s.mo', 'hearthstone-cards', $locale );
 
+		// Setup paths to current locale file
+		$mofile_local  = $lang_dir . $mofile;
+		$mofile_global = WP_LANG_DIR . '/hearthstone-cards/' . $mofile;
+
+		if ( file_exists( $mofile_global ) ) {
+			// Look in global /wp-content/languages/hearthstone-cards/ folder
+			load_textdomain( 'hearthstone-cards', $mofile_global );
+		} elseif ( file_exists( $mofile_local ) ) {
+			// Look in local /wp-content/plugins/hearthstone-cards/languages/ folder
+			load_textdomain( 'hearthstone-cards', $mofile_local );
+		} else {
+			// Load the default language files
+			load_plugin_textdomain( 'hearthstone-cards', false, $lang_dir );
+		}
 	}
 
 	/**
@@ -266,7 +282,7 @@ class Hearthstone_Cards_for_WordPress {
 	 * @since    1.0
 	 */
 	public function enqueue_scripts() {
-		wp_enqueue_script( $this->plugin_slug . '-plugin-script', plugins_url( 'assets/js/public.js', __FILE__ ), array( 'jquery' ), self::VERSION );
+		wp_enqueue_script( $this->plugin_slug . '-plugin-script', plugins_url( 'assets/js/public.js', __FILE__ ), array( 'jquery' ), self::VERSION, true );
 	}
 
 	/**

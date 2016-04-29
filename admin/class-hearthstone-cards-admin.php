@@ -2,7 +2,7 @@
 /**
  * Hearthstone Cards for WordPress
  *
- * @package   Hearthstone_Cards_for_WordPress_Admin
+ * @package   Hearthstone_Cards_Admin
  * @author    flowdee <support@flowdee.de>
  * @link      http://www.flowdee.de
  * @copyright 2015 flowdee
@@ -13,12 +13,12 @@
  * administrative side of the WordPress site.
  *
  * If you're interested in introducing public-facing
- * functionality, then refer to `class-hearthstone-cards-for-wordpress.php`
+ * functionality, then refer to `class-hearthstone-cards.php`
  *
- * @package Hearthstone_Cards_for_WordPress_Admin
+ * @package Hearthstone_Cards_Admin
  * @author  flowdee <support@flowdee.de>
  */
-class Hearthstone_Cards_for_WordPress_Admin {
+class Hearthstone_Cards_Admin {
 
 	/**
 	 * Instance of this class.
@@ -57,7 +57,7 @@ class Hearthstone_Cards_for_WordPress_Admin {
 		 * Call $plugin_slug from public plugin class.
 		 *
 		 */
-		$plugin = Hearthstone_Cards_for_WordPress::get_instance();
+		$plugin = Hearthstone_Cards::get_instance();
 		$this->plugin_slug = $plugin->get_plugin_slug();
 
 		// Load admin style sheet and JavaScript.
@@ -111,7 +111,7 @@ class Hearthstone_Cards_for_WordPress_Admin {
 
 		$screen = get_current_screen();
 		if ( $this->plugin_screen_hook_suffix == $screen->id ) {
-			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array(), Hearthstone_Cards_for_WordPress::VERSION );
+			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array(), Hearthstone_Cards::VERSION );
 		}
 
 	}
@@ -131,7 +131,7 @@ class Hearthstone_Cards_for_WordPress_Admin {
 
 		$screen = get_current_screen();
 		if ( $this->plugin_screen_hook_suffix == $screen->id ) {
-			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ), Hearthstone_Cards_for_WordPress::VERSION );
+			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ), Hearthstone_Cards::VERSION );
 		}
 
 	}
