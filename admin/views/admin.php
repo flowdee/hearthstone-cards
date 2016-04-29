@@ -19,6 +19,41 @@ $hcfw_colored_card_names = get_option('hcfw_colored_card_names');
 $hcfw_bold_links = get_option('hcfw_bold_links');
 ?>
 
+<style type="text/css">
+    /* This stylesheet is used to style the admin option form of the plugin. */
+
+    /* Customizations */
+    .hcfw-bold {
+        font-weight: bold;
+    }
+
+    /* Rarity */
+    .hcfw-card-rarity-free,
+    .hcfw-card-rarity-free:hover {
+        color: #000;
+    }
+
+    .hcfw-card-rarity-common,
+    .hcfw-card-rarity-common:hover {
+        color: #0faf03;
+    }
+
+    .hcfw-card-rarity-rare,
+    .hcfw-card-rarity-rare:hover {
+        color: #198eff;
+    }
+
+    .hcfw-card-rarity-epic,
+    .hcfw-card-rarity-epic:hover {
+        color: #ab48ee;
+    }
+
+    .hcfw-card-rarity-legendary,
+    .hcfw-card-rarity-legendary:hover {
+        color: #f07000;
+    }
+</style>
+
 <div class="wrap hcfw-wrap">
 
     <h2><?php echo esc_html( get_admin_page_title() ); ?></h2>
@@ -77,16 +112,16 @@ $hcfw_bold_links = get_option('hcfw_bold_links');
                                                         <span><?php _e( 'Enabled', 'hearthstone-cards' ); ?></span>
                                                     </label>
                                                     <p><?php _e( 'e.g.', 'hearthstone-cards' ); ?> <span class="hcfw-card-rarity-Free"><?php _e( 'Holy Nova', 'hearthstone-cards' ); ?></span>,
-                                                        <span class="hcfw-card-rarity-Common"><?php _e( 'Shadow Madness', 'hearthstone-cards' ); ?></span>,
-                                                        <span class="hcfw-card-rarity-Rare"><?php _e( 'Loot Hoarder', 'hearthstone-cards' ); ?></span>,
-                                                        <span class="hcfw-card-rarity-Epic"><?php _e( 'Cabal Shadow Priest', 'hearthstone-cards' ); ?></span>,
-                                                        <span class="hcfw-card-rarity-Legendary"><?php _e( 'Ragnaros the Firelord', 'hearthstone-cards' ); ?></span>
+                                                        <span class="hcfw-card-rarity-common"><?php _e( 'Shadow Madness', 'hearthstone-cards' ); ?></span>,
+                                                        <span class="hcfw-card-rarity-rare"><?php _e( 'Loot Hoarder', 'hearthstone-cards' ); ?></span>,
+                                                        <span class="hcfw-card-rarity-epic"><?php _e( 'Cabal Shadow Priest', 'hearthstone-cards' ); ?></span>,
+                                                        <span class="hcfw-card-rarity-legendary"><?php _e( 'Ragnaros the Firelord', 'hearthstone-cards' ); ?></span>
                                                     </p>
                                                 </fieldset>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row"><?php _e( 'Bold card names' ); ?></th>
+                                            <th scope="row"><?php _e( 'Bold card names', 'hearthstone-cards' ); ?></th>
                                             <td>
                                                 <fieldset>
                                                     <label for="hcfw_bold_links">

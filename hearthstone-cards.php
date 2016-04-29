@@ -27,6 +27,7 @@ if ( ! defined( 'WPINC' ) ) {
 /*----------------------------------------------------------------------------*
  * Define Plugin Constants
  *----------------------------------------------------------------------------*/
+define( 'HCFW_VERSION', '2.3.0' );
 define( 'HCFW_DIR', plugin_dir_path( __FILE__ ) );
 define( 'HCFW_URL', plugin_dir_url( __FILE__ ) );
 define( 'HCFW_CARDS_CACHE', 'hcfw_cards_data' );
