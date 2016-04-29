@@ -2,13 +2,21 @@
 /*
  * Build replacements
  */
-function hcfw_get_replacements(){
+function hcfw_get_replacements() {
+
     static $replace;
 
     if (is_array($replace)) {
         return $replace;
     }
 
+    // Cache lookup
+    $cache = get_transient( HCFW_REPLACE_CACHE );
+
+    if ( ! empty ( $cache ) )
+        return $cache;
+
+    // No data available, build new
     $replace = array();
 
     // Load user settings: Language
@@ -72,10 +80,13 @@ function hcfw_get_replacements(){
     $hcfw_bold_links = get_option('hcfw_bold_links');
 
     // Read json file
-    $json_file = HCFW_URL . 'includes/lib/' . $json_lang . '/cards.json';
-
-    // Read json file
-    $string = file_get_contents($json_file);
+    if ( false === ( $string = get_transient( HCFW_CARDS_CACHE ) ) ) {
+        // It wasn't there, so regenerate the data and save to the database
+        $json_file = 'https://api.hearthstonejson.com/v1/latest/' . $json_lang . '/cards.json';
+        $string = file_get_contents($json_file);
+        set_transient( HCFW_CARDS_CACHE, $string );
+    }
+    //$json_file = HCFW_URL . 'includes/lib/' . $json_lang . '/cards.json';
 
     if(isset($string) && !empty($string)) {
 
@@ -114,6 +125,9 @@ function hcfw_get_replacements(){
             }
         }
     }
+
+    // Cache data
+    set_transient( HCFW_REPLACE_CACHE, $replace );
 
     return $replace;
 }

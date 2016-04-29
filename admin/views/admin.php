@@ -99,6 +99,17 @@ $hcfw_bold_links = get_option('hcfw_bold_links');
                                                 </fieldset>
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <th scope="row"><?php _e( 'Cache', 'hearthstone-cards' ); ?></th>
+                                            <td>
+                                                <fieldset>
+                                                    <label for="hcfw_empty_cache">
+                                                        <input name="hcfw_empty_cache" type="checkbox" id="hcfw_empty_cache" value="1" />
+                                                        <span><?php _e( 'Check in order to receive updated cards data', 'hearthstone-cards' ); ?></span>
+                                                    </label>
+                                                </fieldset>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                                 <p>
