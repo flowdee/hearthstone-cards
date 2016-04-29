@@ -84,7 +84,7 @@ function hcfw_get_replacements() {
         // It wasn't there, so regenerate the data and save to the database
         $json_file = 'https://api.hearthstonejson.com/v1/latest/' . $json_lang . '/cards.json';
         $string = file_get_contents($json_file);
-        set_transient( HCFW_CARDS_CACHE, $string );
+        set_transient( HCFW_CARDS_CACHE, $string, 60 * 60 * 24 );
     }
 
     if(isset($string) && !empty($string)) {
@@ -132,7 +132,7 @@ function hcfw_get_replacements() {
     }
 
     // Cache data
-    set_transient( HCFW_REPLACE_CACHE, $replace );
+    set_transient( HCFW_REPLACE_CACHE, $replace, 60 * 60 * 24 );
 
     return $replace;
 }
