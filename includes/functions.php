@@ -94,7 +94,13 @@ function hcfw_get_replacements() {
 
         foreach ($json_a as $key => $sub){
 
-            if( isset( $sub['id'] ) && isset( $sub['name'] ) && isset( $sub['type'] ) && 'ENCHANTMENT' != $sub['type'] ) {
+            if ( ! isset( $sub['id'] ) || ! isset( $sub['name'] ) )
+                continue;
+
+            if ( ! isset ( $sub['type'] ) || 'ENCHANTMENT' == $sub['type'] )
+                continue;
+
+            if ( isset ( $sub['collectible'] ) || isset ( $sub['set'] ) && $sub['set'] == 'CORE' ) {
 
                 // Setup classes
                 $classes = 'hcfw-card';
@@ -120,8 +126,8 @@ function hcfw_get_replacements() {
                 $replace['[' . $sub['name'] . ' gold]'] = $newNameGold;
                 $replace['[' . htmlentities($sub['name'], ENT_COMPAT, 'UTF-8') . ' gold]'] = $newNameGold;
                 $replace['[' . str_replace("'", '&#8217;', $sub['name']) . ' gold]'] = $newNameGold;
-
             }
+
         }
     }
 
