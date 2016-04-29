@@ -175,6 +175,15 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Upgrade Notice ==
 
+= Version 2.3.0 (29th April 2016) =
+* New: New cards and data will now be fetched via an API automatically
+* New: Card data cache can be renewed manually via settings page
+* New: Plugin can now be translated by the community
+* New: Added German translations
+* Optimized card validation
+* Fixed several wrong card/image assignments
+* Moved Javascript file to footer
+
 = Version 2.2.1 (22th March 2016) =
 * Fixed a bug which prevents some basic cards to be converted
 * Fixed a bug which leads into broken images

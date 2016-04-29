@@ -27,7 +27,7 @@ class Hearthstone_Cards {
 	 *
 	 * @var     string
 	 */
-	const VERSION = '2.1.0';
+	const VERSION = HCFW_VERSION;
 
 	/**
 	 * Unique identifier for your plugin.
