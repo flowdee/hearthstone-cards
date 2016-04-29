@@ -86,7 +86,6 @@ function hcfw_get_replacements() {
         $string = file_get_contents($json_file);
         set_transient( HCFW_CARDS_CACHE, $string );
     }
-    //$json_file = HCFW_URL . 'includes/lib/' . $json_lang . '/cards.json';
 
     if(isset($string) && !empty($string)) {
 
