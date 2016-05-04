@@ -136,10 +136,10 @@ function hcfw_get_replacements() {
             }
 
         }
-    }
 
-    // Cache data
-    set_transient( HCFW_REPLACE_CACHE, $replace, 60 * 60 * 24 );
+        // Cache data
+        set_transient( HCFW_REPLACE_CACHE, $replace, 60 * 60 * 24 );
+    }
 
     return $replace;
 }
