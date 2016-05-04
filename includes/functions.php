@@ -83,11 +83,18 @@ function hcfw_get_replacements() {
     if ( false === ( $string = get_transient( HCFW_CARDS_CACHE ) ) ) {
         // It wasn't there, so regenerate the data and save to the database
         $json_file = 'https://api.hearthstonejson.com/v1/latest/' . $json_lang . '/cards.json';
-        $string = file_get_contents($json_file);
-        set_transient( HCFW_CARDS_CACHE, $string, 60 * 60 * 24 );
+
+        $response = wp_remote_get($json_file);
+
+        if ( ! empty ( $response['body'] ) ) {
+            $string = $response['body'];
+            set_transient( HCFW_CARDS_CACHE, $string, 60 * 60 * 24 );
+        } else {
+            $string = null;
+        }
     }
 
-    if(isset($string) && !empty($string)) {
+    if( !empty($string) ) {
 
         // Prepare content
         $json_a = json_decode($string,true);
