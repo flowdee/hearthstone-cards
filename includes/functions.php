@@ -88,7 +88,7 @@ function hcfw_get_replacements() {
 
         if( is_array( $response ) && isset ( $response['body'] ) ) {
             $string = $response['body'];
-            set_transient( HCFW_CARDS_CACHE, $string, 60 * 60 * 24 );
+            set_transient( HCFW_CARDS_CACHE, $string, 60 * 60 * 72 );
         } else {
             $string = null;
         }
@@ -138,7 +138,7 @@ function hcfw_get_replacements() {
         }
 
         // Cache data
-        set_transient( HCFW_REPLACE_CACHE, $replace, 60 * 60 * 24 );
+        set_transient( HCFW_REPLACE_CACHE, $replace, 60 * 60 * 72 );
     }
 
     return $replace;
