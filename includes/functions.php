@@ -86,7 +86,7 @@ function hcfw_get_replacements() {
 
         $response = wp_remote_get($json_file);
 
-        if ( ! empty ( $response['body'] ) ) {
+        if( is_array( $response ) && isset ( $response['body'] ) ) {
             $string = $response['body'];
             set_transient( HCFW_CARDS_CACHE, $string, 60 * 60 * 24 );
         } else {
