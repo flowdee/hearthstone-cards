@@ -1,10 +1,10 @@
 === Hearthstone Cards for WordPress ===
 Contributors: flowdee
-Donate link: http://donate.flowdee.de
+Donate link: https://donate.flowdee.de
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
-Tested up to: 4.5.1
-Stable tag: 2.3.1
+Tested up to: 4.5.2
+Stable tag: 2.3.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -83,6 +83,11 @@ Yes of course. Please install the plugin via the network administration but **do
 2. Hearthstone Cards overlay in action
 
 == Changelog ==
+
+= Version 2.3.2 (11th May 2016) =
+* Increased default caching time for card data from 1 to 5 days
+* Added local fallback when latest card data from API is not available
+* Fixed and issue when latest card data from API was not available
 
 = Version 2.3.1 (4th May 2016) =
 * Fix: Card data couldn't be fetched in a certain circumstance (replaced file_get_contents with wp_remote_get)
@@ -180,6 +185,11 @@ Yes of course. Please install the plugin via the network administration but **do
 * Initial release
 
 == Upgrade Notice ==
+
+= Version 2.3.2 (11th May 2016) =
+* Increased default caching time for card data from 1 to 5 days
+* Added local fallback when latest card data from API is not available
+* Fixed and issue when latest card data from API was not available
 
 = Version 2.3.1 (4th May 2016) =
 * Fix: Card data couldn't be fetched in a certain circumstance (replaced file_get_contents with wp_remote_get)
