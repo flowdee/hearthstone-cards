@@ -30,8 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
 define( 'HCFW_VERSION', '2.3.1' );
 define( 'HCFW_DIR', plugin_dir_path( __FILE__ ) );
 define( 'HCFW_URL', plugin_dir_url( __FILE__ ) );
-define( 'HCFW_CARDS_CACHE', 'hcfw_cards_data' );
-define( 'HCFW_REPLACE_CACHE', 'hcfw_replace_data' );
+define( 'HCFW_CACHE', 'hcfw_cache' );
 
 /*----------------------------------------------------------------------------*
  * Plugin Includes

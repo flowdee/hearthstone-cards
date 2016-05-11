@@ -10,12 +10,6 @@ function hcfw_get_replacements() {
         return $replace;
     }
 
-    // Cache lookup
-    $cache = get_transient( HCFW_REPLACE_CACHE );
-
-    if ( ! empty ( $cache ) )
-        return $cache;
-
     // No data available, build new
     $replace = array();
 
@@ -79,21 +73,43 @@ function hcfw_get_replacements() {
 
     $hcfw_bold_links = get_option('hcfw_bold_links');
 
-    // Read json file
-    if ( false === ( $string = get_transient( HCFW_CARDS_CACHE ) ) ) {
-        // It wasn't there, so regenerate the data and save to the database
-        $json_file = 'https://api.hearthstonejson.com/v1/latest/' . $json_lang . '/cards.json';
+    // Fetch latest data from API
+    if ( false === ( $string = get_transient( HCFW_CACHE ) ) ) {
 
-        $response = wp_remote_get($json_file);
+        // Try API call
+        $response = wp_remote_get( 'https://api.hearthstonejson.com/v1/latest/' . $json_lang . '/cards.json', array(
+            'timeout' => 15,
+            'sslverify' => false
+        ));
 
-        if( is_array( $response ) && isset ( $response['body'] ) ) {
-            $string = $response['body'];
-            set_transient( HCFW_CARDS_CACHE, $string, 60 * 60 * 72 );
-        } else {
+        try {
+
+            if ( is_wp_error( $response ) ) {
+                $string = null;
+
+            } elseif ( is_array( $response ) && isset ( $response['body'] ) ) {
+                $string = $response['body'];
+                set_transient( HCFW_CACHE, $string, 60 * 60 * 120 );
+
+            } else {
+                $string = null;
+            }
+
+        } catch ( Exception $ex ) {
             $string = null;
         }
     }
 
+    // Fallback when no newer API data available
+    if ( empty ( $string ) ) {
+        // Read json file
+        $json_file = HCFW_DIR . 'includes/data/' . $json_lang . '/cards.json';
+
+        // Read json file
+        $string = file_get_contents($json_file);
+    }
+
+    // Action
     if( !empty($string) ) {
 
         // Prepare content
@@ -136,9 +152,6 @@ function hcfw_get_replacements() {
             }
 
         }
-
-        // Cache data
-        set_transient( HCFW_REPLACE_CACHE, $replace, 60 * 60 * 72 );
     }
 
     return $replace;
