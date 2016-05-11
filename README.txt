@@ -87,6 +87,7 @@ Yes of course. Please install the plugin via the network administration but **do
 = Version 2.3.2 (11th May 2016) =
 * Increased default caching time for card data from 1 to 5 days
 * Added local fallback when latest card data from API is not available
+* Added missing translations
 * Fixed and issue when latest card data from API was not available
 
 = Version 2.3.1 (4th May 2016) =
@@ -189,6 +190,7 @@ Yes of course. Please install the plugin via the network administration but **do
 = Version 2.3.2 (11th May 2016) =
 * Increased default caching time for card data from 1 to 5 days
 * Added local fallback when latest card data from API is not available
+* Added missing translations
 * Fixed and issue when latest card data from API was not available
 
 = Version 2.3.1 (4th May 2016) =
