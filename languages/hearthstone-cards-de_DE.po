@@ -1,13 +1,15 @@
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: Hearthstone Cards for WordPress\n"
-"POT-Creation-Date: 2016-04-29 12:51+0200\n"
-"PO-Revision-Date: 2016-04-29 16:02+0200\n"
+"POT-Creation-Date: 2016-05-11 10:48+0200\n"
+"PO-Revision-Date: 2016-05-11 10:49+0200\n"
+"Last-Translator: flowdee <coder@flowdee.de>\n"
 "Language-Team: flowdee <coder@flowdee.de>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.8.7\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: hearthstone-cards.php\n"
@@ -15,8 +17,6 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Last-Translator: flowdee <coder@flowdee.de>\n"
-"Language: de_DE\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -33,97 +33,106 @@ msgstr "Hearthstone Cards"
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: admin/views/admin.php:38
+#: admin/views/admin.php:73
 msgid "Configuration"
 msgstr "Konfiguration"
 
-#: admin/views/admin.php:40
+#: admin/views/admin.php:75
 msgid "Here you can find a few options to customize the output."
 msgstr ""
 "Hier findest du eine Auswahl an Optionen, mit denen du die Ausgabe anpassen "
 "kannst."
 
-#: admin/views/admin.php:45
+#: admin/views/admin.php:80
 msgid "Show cards"
 msgstr "Karten anzeigen"
 
-#: admin/views/admin.php:50 admin/views/admin.php:77 admin/views/admin.php:94
+#: admin/views/admin.php:85 admin/views/admin.php:112 admin/views/admin.php:129
 msgid "Enabled"
 msgstr "Aktiviert"
 
-#: admin/views/admin.php:56
+#: admin/views/admin.php:91
 msgid "Language of cards"
 msgstr "Sprache auswählen"
 
-#: admin/views/admin.php:60
+#: admin/views/admin.php:95
 msgid "English"
 msgstr "Englisch"
 
-#: admin/views/admin.php:61
+#: admin/views/admin.php:96
 msgid "Chinese"
 msgstr "Chinesisch"
 
-#: admin/views/admin.php:62
+#: admin/views/admin.php:97
 msgid "French"
 msgstr "Französisch"
 
-#: admin/views/admin.php:63
+#: admin/views/admin.php:98
 msgid "German"
 msgstr "Deutsch"
 
-#: admin/views/admin.php:64
+#: admin/views/admin.php:99
 msgid "Russian"
 msgstr "Russisch"
 
-#: admin/views/admin.php:65
+#: admin/views/admin.php:100
 msgid "Spanish"
 msgstr "Spanisch"
 
-#: admin/views/admin.php:66
+#: admin/views/admin.php:101
 msgid "Portuguese (Brazil)"
 msgstr "Portugiesisch (Brasilien)"
 
-#: admin/views/admin.php:72
+#: admin/views/admin.php:107
 msgid "Colored card names"
 msgstr "Farbige Kartennamen"
 
-#: admin/views/admin.php:79 admin/views/admin.php:96
+#: admin/views/admin.php:114 admin/views/admin.php:131
 msgid "e.g."
 msgstr "z.B."
 
-#: admin/views/admin.php:79
+#: admin/views/admin.php:114
 msgid "Holy Nova"
 msgstr "Heilige Nova"
 
-#: admin/views/admin.php:80 admin/views/admin.php:96 admin/views/admin.php:97
+#: admin/views/admin.php:115 admin/views/admin.php:131
+#: admin/views/admin.php:132
 msgid "Shadow Madness"
 msgstr "Shadow Madness"
 
-#: admin/views/admin.php:81
+#: admin/views/admin.php:116
 msgid "Loot Hoarder"
 msgstr "Loot Hoarder"
 
-#: admin/views/admin.php:82
+#: admin/views/admin.php:117
 msgid "Cabal Shadow Priest"
 msgstr "Cabal Shadow Priest"
 
-#: admin/views/admin.php:83
+#: admin/views/admin.php:118
 msgid "Ragnaros the Firelord"
 msgstr "Ragnaros the Firelord"
 
-#: admin/views/admin.php:89
+#: admin/views/admin.php:124
 msgid "Bold card names"
 msgstr "Fettgedruckte Kartennamen"
 
-#: admin/views/admin.php:96
+#: admin/views/admin.php:131
 msgid "or"
 msgstr "oder"
 
-#: admin/views/admin.php:105
+#: admin/views/admin.php:138
+msgid "Cache"
+msgstr "Cache"
+
+#: admin/views/admin.php:143
+msgid "Check in order to receive updated cards data"
+msgstr "Aktivieren um die vorhandenen Karten-Daten zu aktualisieren"
+
+#: admin/views/admin.php:151
 msgid "Update settings"
 msgstr "Einstellungen aktualisieren"
 
-#: admin/views/admin.php:126
+#: admin/views/admin.php:172
 msgid ""
 "Hearthstone Cards for WordPress adds an overlay to written card names within "
 "brackets e.g. [Druid of the Claw] and displays the associated image while "
@@ -132,7 +141,7 @@ msgstr ""
 "Mit Hearthstone Cards for WordPress werden Kartennamen mit einem „Overlay“ "
 "versehen, welches die aktuelle Karte zeigt."
 
-#: admin/views/admin.php:127
+#: admin/views/admin.php:173
 msgid ""
 "All of my plugins & themes are handmade with passion. I really looking "
 "forward to your feedback and suggestions."
@@ -141,27 +150,27 @@ msgstr ""
 "Freude. Daher freue ich mich sehr über dein Feedback und "
 "Verbesserungsvorschläge."
 
-#: admin/views/admin.php:135
+#: admin/views/admin.php:181
 msgid "Support & Resources"
 msgstr "Support & Links"
 
-#: admin/views/admin.php:138
+#: admin/views/admin.php:184
 msgid "Visit plugin page"
 msgstr "Plugin-Seite aufrufen"
 
-#: admin/views/admin.php:139
+#: admin/views/admin.php:185
 msgid "View online demo"
 msgstr "Online-Demo aufrufen"
 
-#: admin/views/admin.php:140
+#: admin/views/admin.php:186
 msgid "View documentation"
 msgstr "Dokumentation aufrufen"
 
-#: admin/views/admin.php:141
+#: admin/views/admin.php:187
 msgid "Issue tracker"
 msgstr "Fehlersammlung"
 
-#: admin/views/admin.php:142
+#: admin/views/admin.php:188
 msgid "Follow me on Twitter"
 msgstr "Folge mir auf Twitter"
 
