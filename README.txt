@@ -22,7 +22,7 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 *   Standard and gold (premium) card images available
 *   Show colored card names according to their rarity
 *   Configuration page for more options
-*   Try out the online [demo](https://coder.flowdee.de/hearthstone-cards/demo/)
+*   Try out the online [demo](https://coder.flowdee.de/hearthstone-cards-for-wordpress/demo/)
 *   Regular updates and improvements: Go though the [changelog](https://wordpress.org/plugins/hearthstone-cards/changelog/)
 
 = How to display Hearthstone Cards =
