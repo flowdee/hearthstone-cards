@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Hearthstone Cards for WordPress\n"
-"POT-Creation-Date: 2016-05-11 10:48+0200\n"
+"POT-Creation-Date: 2016-09-22 11:07+0200\n"
 "PO-Revision-Date: 2016-04-29 12:51+0200\n"
 "Last-Translator: flowdee <coder@flowdee.de>\n"
 "Language-Team: flowdee <coder@flowdee.de>\n"
@@ -119,51 +119,61 @@ msgid "or"
 msgstr ""
 
 #: admin/views/admin.php:138
-msgid "Cache"
+msgid "Last Update"
 msgstr ""
 
-#: admin/views/admin.php:143
-msgid "Check in order to receive updated cards data"
+#: admin/views/admin.php:145
+msgid "Cards database will be updated automatically"
+msgstr ""
+
+#: admin/views/admin.php:147
+msgid "Local cards database will be taken"
 msgstr ""
 
 #: admin/views/admin.php:151
+msgid ""
+"In order to receive updated cards automatically, <strong>PHP cURL</strong> "
+"extension must be enabled on your web hosting."
+msgstr ""
+
+#: admin/views/admin.php:157
+msgid "Check in order to force updating cards"
+msgstr ""
+
+#: admin/views/admin.php:166
 msgid "Update settings"
 msgstr ""
 
-#: admin/views/admin.php:172
+#: admin/views/admin.php:187
 msgid ""
 "Hearthstone Cards for WordPress adds an overlay to written card names within "
 "brackets e.g. [Druid of the Claw] and displays the associated image while "
 "hovering the card name."
 msgstr ""
 
-#: admin/views/admin.php:173
+#: admin/views/admin.php:188
 msgid ""
 "All of my plugins & themes are handmade with passion. I really looking "
 "forward to your feedback and suggestions."
 msgstr ""
 
-#: admin/views/admin.php:181
+#: admin/views/admin.php:196
 msgid "Support & Resources"
 msgstr ""
 
-#: admin/views/admin.php:184
+#: admin/views/admin.php:199
 msgid "Visit plugin page"
 msgstr ""
 
-#: admin/views/admin.php:185
+#: admin/views/admin.php:200
 msgid "View online demo"
 msgstr ""
 
-#: admin/views/admin.php:186
-msgid "View documentation"
-msgstr ""
-
-#: admin/views/admin.php:187
+#: admin/views/admin.php:201
 msgid "Issue tracker"
 msgstr ""
 
-#: admin/views/admin.php:188
+#: admin/views/admin.php:202
 msgid "Follow me on Twitter"
 msgstr ""
 

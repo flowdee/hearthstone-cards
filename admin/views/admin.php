@@ -135,13 +135,28 @@ $hcfw_bold_links = get_option('hcfw_bold_links');
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row"><?php _e( 'Cache', 'hearthstone-cards' ); ?></th>
+                                            <th scope="row"><?php _e( 'Last Update', 'hearthstone-cards' ); ?>
+                                                <?php if ( ! function_exists('curl_version') ) { ?><br /><small><?php echo date( get_option('date_format'), strtotime( HCFW_LAST_UPDATE ) ); ?></small><?php } ?>
+                                            </th>
                                             <td>
                                                 <fieldset>
-                                                    <label for="hcfw_empty_cache">
-                                                        <input name="hcfw_empty_cache" type="checkbox" id="hcfw_empty_cache" value="1" />
-                                                        <span><?php _e( 'Check in order to receive updated cards data', 'hearthstone-cards' ); ?></span>
-                                                    </label>
+                                                    <p>
+                                                        <?php if ( function_exists('curl_version') ) { ?>
+                                                            <span class="" style="color: darkgreen;"><strong><?php _e( 'Cards database will be updated automatically', 'hearthstone-cards' ); ?></strong></span>
+                                                        <?php } else { ?>
+                                                            <span class="" style="color: darkred;"><strong><?php _e( 'Local cards database will be taken', 'hearthstone-cards' ); ?></strong></span>
+                                                        <?php } ?>
+                                                    </p>
+                                                    <?php if ( ! function_exists('curl_version') ) { ?>
+                                                        <p><em><?php _e( 'In order to receive updated cards automatically, <strong>PHP cURL</strong> extension must be enabled on your web hosting.', 'hearthstone-cards' ); ?></em></p>
+                                                    <?php } ?>
+
+                                                    <?php if ( function_exists('curl_version') ) { ?>
+                                                        <label for="hcfw_empty_cache">
+                                                            <input name="hcfw_empty_cache" type="checkbox" id="hcfw_empty_cache" value="1" />
+                                                            <span><?php _e( 'Check in order to force updating cards', 'hearthstone-cards' ); ?></span>
+                                                        </label>
+                                                    <?php } ?>
                                                 </fieldset>
                                             </td>
                                         </tr>
@@ -181,9 +196,8 @@ $hcfw_bold_links = get_option('hcfw_bold_links');
                         <h3><span><?php _e( 'Support & Resources', 'hearthstone-cards' ); ?></span></h3>
                         <div class="inside">
                             <ul>
-                                <li><a href="https://coder.flowdee.de/hearthstone-cards-for-wordpress/" title="Visit plugin page" target="_blank"><?php _e( 'Visit plugin page', 'hearthstone-cards' ); ?></a></li>
-                                <li><a href="https://coder.flowdee.de/hearthstone-cards-for-wordpress/demo/" title="View Documentation"><?php _e( 'View online demo', 'hearthstone-cards' ); ?></a></li>
-                                <li><a href="https://coder.flowdee.de/hearthstone-cards-for-wordpress/documentation/" title="View Documentation"><?php _e( 'View documentation', 'hearthstone-cards' ); ?></a></li>
+                                <li><a href="https://wordpress.org/plugins/hearthstone-cards/" title="Visit plugin page" target="_blank"><?php _e( 'Visit plugin page', 'hearthstone-cards' ); ?></a></li>
+                                <li><a href="https://coder.flowdee.de/hearthstone-cards-for-wordpress/" title="View online demo"><?php _e( 'View online demo', 'hearthstone-cards' ); ?></a></li>
                                 <li><a href="https://github.com/flowdee/hearthstone-cards/issues" title="Issue Tracker"><?php _e( 'Issue tracker', 'hearthstone-cards' ); ?></a></li>
                                 <li><a href="https://twitter.com/flowdee" title="Follow me on Twitter"><?php _e( 'Follow me on Twitter', 'hearthstone-cards' ); ?></a></li>
                             </ul>

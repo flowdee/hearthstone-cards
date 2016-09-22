@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Hearthstone Cards for WordPress\n"
-"POT-Creation-Date: 2016-05-11 10:48+0200\n"
-"PO-Revision-Date: 2016-05-11 10:49+0200\n"
+"POT-Creation-Date: 2016-09-22 11:08+0200\n"
+"PO-Revision-Date: 2016-09-22 11:08+0200\n"
 "Last-Translator: flowdee <coder@flowdee.de>\n"
 "Language-Team: flowdee <coder@flowdee.de>\n"
 "Language: de_DE\n"
@@ -121,18 +121,34 @@ msgid "or"
 msgstr "oder"
 
 #: admin/views/admin.php:138
-msgid "Cache"
-msgstr "Cache"
+msgid "Last Update"
+msgstr "Letzte Aktualisierung"
 
-#: admin/views/admin.php:143
-msgid "Check in order to receive updated cards data"
-msgstr "Aktivieren um die vorhandenen Karten-Daten zu aktualisieren"
+#: admin/views/admin.php:145
+msgid "Cards database will be updated automatically"
+msgstr "Karten-Datenbank wird automatisch aktualisiert"
+
+#: admin/views/admin.php:147
+msgid "Local cards database will be taken"
+msgstr "Lokale Karten-Datenbank wird verwendet"
 
 #: admin/views/admin.php:151
+msgid ""
+"In order to receive updated cards automatically, <strong>PHP cURL</strong> "
+"extension must be enabled on your web hosting."
+msgstr ""
+"Um automatisch die neuesten Karten zu erhalten, muss die <strong>PHP cURL</"
+"strong> Erweiterung auf deinem WebHosting aktiviert sein."
+
+#: admin/views/admin.php:157
+msgid "Check in order to force updating cards"
+msgstr "Aktivieren, um das Aktualisieren der Karten zu erzwingen."
+
+#: admin/views/admin.php:166
 msgid "Update settings"
 msgstr "Einstellungen aktualisieren"
 
-#: admin/views/admin.php:172
+#: admin/views/admin.php:187
 msgid ""
 "Hearthstone Cards for WordPress adds an overlay to written card names within "
 "brackets e.g. [Druid of the Claw] and displays the associated image while "
@@ -141,7 +157,7 @@ msgstr ""
 "Mit Hearthstone Cards for WordPress werden Kartennamen mit einem „Overlay“ "
 "versehen, welches die aktuelle Karte zeigt."
 
-#: admin/views/admin.php:173
+#: admin/views/admin.php:188
 msgid ""
 "All of my plugins & themes are handmade with passion. I really looking "
 "forward to your feedback and suggestions."
@@ -150,27 +166,23 @@ msgstr ""
 "Freude. Daher freue ich mich sehr über dein Feedback und "
 "Verbesserungsvorschläge."
 
-#: admin/views/admin.php:181
+#: admin/views/admin.php:196
 msgid "Support & Resources"
 msgstr "Support & Links"
 
-#: admin/views/admin.php:184
+#: admin/views/admin.php:199
 msgid "Visit plugin page"
 msgstr "Plugin-Seite aufrufen"
 
-#: admin/views/admin.php:185
+#: admin/views/admin.php:200
 msgid "View online demo"
 msgstr "Online-Demo aufrufen"
 
-#: admin/views/admin.php:186
-msgid "View documentation"
-msgstr "Dokumentation aufrufen"
-
-#: admin/views/admin.php:187
+#: admin/views/admin.php:201
 msgid "Issue tracker"
 msgstr "Fehlersammlung"
 
-#: admin/views/admin.php:188
+#: admin/views/admin.php:202
 msgid "Follow me on Twitter"
 msgstr "Folge mir auf Twitter"
 
@@ -193,3 +205,18 @@ msgstr "flowdee"
 #. Author URI of the plugin/theme
 msgid "https://coder.flowdee.de"
 msgstr "https://coder.flowdee.de"
+
+#~ msgid "Updates"
+#~ msgstr "Aktualisierungen"
+
+#~ msgid "Last update on %1$s"
+#~ msgstr "Letzte Aktualisierung am %1$s"
+
+#~ msgid "Cache"
+#~ msgstr "Cache"
+
+#~ msgid "Check in order to receive updated cards data"
+#~ msgstr "Aktivieren um die vorhandenen Karten-Daten zu aktualisieren"
+
+#~ msgid "View documentation"
+#~ msgstr "Dokumentation aufrufen"
