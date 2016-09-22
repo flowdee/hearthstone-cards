@@ -76,13 +76,13 @@ function hcfw_get_replacements() {
     // Fetch latest data from API
     if ( false === ( $string = get_transient( HCFW_CACHE ) ) ) {
 
-        // Try API call
-        $response = wp_remote_get( 'https://api.hearthstonejson.com/v1/latest/' . $json_lang . '/cards.json', array(
-            'timeout' => 15,
-            'sslverify' => false
-        ));
-
         try {
+
+            // Try API call
+            $response = wp_remote_get( 'https://api.hearthstonejson.com/v1/latest/' . $json_lang . '/cards.json', array(
+                'timeout' => 15,
+                'sslverify' => false
+            ));
 
             if ( is_wp_error( $response ) ) {
                 $string = null;
