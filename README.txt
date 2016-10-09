@@ -4,7 +4,7 @@ Donate link: https://donate.flowdee.de
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
 Tested up to: 4.6.1
-Stable tag: 2.3.3
+Stable tag: 2.3.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -83,6 +83,9 @@ Yes of course. Please install the plugin via the network administration but **do
 2. Hearthstone Cards overlay in action
 
 == Changelog ==
+
+= Version 2.3.4 (10th October 2016) =
+* Updated local cards database to latest v14830
 
 = Version 2.3.3 (22th September 2016) =
 * New: Added feedback about the automated card updates to settings page
@@ -190,6 +193,9 @@ Yes of course. Please install the plugin via the network administration but **do
 * Initial release
 
 == Upgrade Notice ==
+
+= Version 2.3.4 (10th October 2016) =
+* Updated local cards database to latest v14830
 
 = Version 2.3.3 (22th September 2016) =
 * New: Added feedback about the automated card updates to settings page
