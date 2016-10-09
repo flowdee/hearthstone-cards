@@ -38,6 +38,7 @@ intermediate
 .idea
 cache
 node_modules
+dist
 
 # flowdee
 deploy.sh
