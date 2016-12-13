@@ -9,49 +9,49 @@ module.exports = function (grunt) {
         downloadfile: {
             files: [
                 {
-                    url: 'https://api.hearthstonejson.com/v1/14830/deDE/cards.json',
+                    url: 'https://api.hearthstonejson.com/v1/15590/deDE/cards.json',
                     port: 80,
                     dest: 'dist/deDE/',
                     name: 'cards.json',
                     overwrite: true
                 },
                 {
-                    url: 'https://api.hearthstonejson.com/v1/14830/enUS/cards.json',
+                    url: 'https://api.hearthstonejson.com/v1/15590/enUS/cards.json',
                     port: 80,
                     dest: 'dist/enUS/',
                     name: 'cards.json',
                     overwrite: true
                 },
                 {
-                    url: 'https://api.hearthstonejson.com/v1/14830/esES/cards.json',
+                    url: 'https://api.hearthstonejson.com/v1/15590/esES/cards.json',
                     port: 80,
                     dest: 'dist/esES/',
                     name: 'cards.json',
                     overwrite: true
                 },
                 {
-                    url: 'https://api.hearthstonejson.com/v1/14830/frFR/cards.json',
+                    url: 'https://api.hearthstonejson.com/v1/15590/frFR/cards.json',
                     port: 80,
                     dest: 'dist/frFR/',
                     name: 'cards.json',
                     overwrite: true
                 },
                 {
-                    url: 'https://api.hearthstonejson.com/v1/14830/ptBR/cards.json',
+                    url: 'https://api.hearthstonejson.com/v1/15590/ptBR/cards.json',
                     port: 80,
                     dest: 'dist/ptBR/',
                     name: 'cards.json',
                     overwrite: true
                 },
                 {
-                    url: 'https://api.hearthstonejson.com/v1/14830/ruRU/cards.json',
+                    url: 'https://api.hearthstonejson.com/v1/15590/ruRU/cards.json',
                     port: 80,
                     dest: 'dist/ruRU/',
                     name: 'cards.json',
                     overwrite: true
                 },
                 {
-                    url: 'https://api.hearthstonejson.com/v1/14830/zhCN/cards.json',
+                    url: 'https://api.hearthstonejson.com/v1/15590/zhCN/cards.json',
                     port: 80,
                     dest: 'dist/zhCN/',
                     name: 'cards.json',
