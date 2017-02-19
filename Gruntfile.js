@@ -8,6 +8,7 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
         downloadfile: {
             files: [
+                // Cards
                 {
                     url: 'https://api.hearthstonejson.com/v1/15590/deDE/cards.json',
                     port: 80,
@@ -55,6 +56,14 @@ module.exports = function (grunt) {
                     port: 80,
                     dest: 'dist/zhCN/',
                     name: 'cards.json',
+                    overwrite: true
+                },
+                // Images
+                {
+                    url: 'https://github.com/schmich/hearthstone-card-images/blob/master/images.json',
+                    port: 80,
+                    dest: 'dist/',
+                    name: 'images.json',
                     overwrite: true
                 }
             ]

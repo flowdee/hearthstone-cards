@@ -32,6 +32,7 @@ define( 'HCFW_LAST_UPDATE', '13.12.2016' );
 define( 'HCFW_DIR', plugin_dir_path( __FILE__ ) );
 define( 'HCFW_URL', plugin_dir_url( __FILE__ ) );
 define( 'HCFW_CACHE', 'hcfw_cache' );
+define( 'HCFW_CARD_IMAGE_PATHS_CACHE', 'hcfw_card_image_paths_cache' );
 
 /*----------------------------------------------------------------------------*
  * Plugin Includes

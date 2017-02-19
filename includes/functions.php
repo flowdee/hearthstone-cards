@@ -109,6 +109,9 @@ function hcfw_get_replacements() {
         $string = file_get_contents($json_file);
     }
 
+    // Images
+    $image_paths = hcfw_get_card_image_paths();
+
     // Action
     if( !empty($string) ) {
 
@@ -122,6 +125,11 @@ function hcfw_get_replacements() {
 
             if ( ! isset ( $sub['type'] ) || 'ENCHANTMENT' == $sub['type'] )
                 continue;
+
+            if ( ! isset( $image_paths[$sub['id']] ) )
+                continue;
+
+            $image_path = $image_paths[$sub['id']];
 
             if ( isset ( $sub['collectible'] ) || isset ( $sub['set'] ) && $sub['set'] == 'CORE' ) {
 
@@ -137,14 +145,14 @@ function hcfw_get_replacements() {
                 }
 
                 // Setup link
-                $newName = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '">' . $sub['name'] . '</a>';
+                $newName = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '" data-hcfw-image-path="' . $image_path . '">' . $sub['name'] . '</a>';
 
                 $replace['[' . $sub['name'] . ']'] = $newName;
                 $replace['[' . htmlentities($sub['name'], ENT_COMPAT, 'UTF-8') . ']'] = $newName;
                 $replace['[' . str_replace("'", '&#8217;', $sub['name']) . ']'] = $newName;
 
                 // Gold cards
-                $newNameGold = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '" data-hcfw-gold="true">' . $sub['name'] . '</a>';
+                $newNameGold = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '" data-hcfw-image-path="' . $image_path . '" data-hcfw-gold="true">' . $sub['name'] . '</a>';
 
                 $replace['[' . $sub['name'] . ' gold]'] = $newNameGold;
                 $replace['[' . htmlentities($sub['name'], ENT_COMPAT, 'UTF-8') . ' gold]'] = $newNameGold;
@@ -168,6 +176,34 @@ function hcfw_find_and_replace_cards($content){
     $content = strtr($content, $replace);
 
     return $content;
+}
+
+function hcfw_get_card_image_paths() {
+
+    $images = get_transient( HCFW_CARD_IMAGE_PATHS_CACHE );
+
+    if ( empty( $images ) ) {
+
+        // Read json file
+        $images_json_file = HCFW_DIR . 'includes/data/images.json';
+
+        // Read json file
+        $images = file_get_contents($images_json_file);
+
+        $paths = array();
+
+        if ( is_array( $images ) ) {
+            foreach ( $images as $image ) {
+                if ( ! empty( $image['id'] ) && ! empty( $image['path'] ) )
+                    $paths[$image['id']] = $image['path'];
+            }
+        }
+
+        if ( ! empty( $images ) )
+            set_transient( HCFW_CARD_IMAGE_PATHS_CACHE, $images, 12 * 60 * 24 * 7 ); // 7 Day
+    }
+
+    return $images;
 }
 
 // Filter
