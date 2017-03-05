@@ -4,13 +4,13 @@
  * @author    flowdee <support@flowdee.de>
  * @license   GPL-3.0+
  * @link      https://coder.flowdee.de
- * @copyright 2016 flowdee
+ * @copyright 2017 flowdee
  *
  * @wordpress-plugin
  * Plugin Name:       Hearthstone Cards for WordPress
  * Plugin URI:        https://wordpress.org/plugins/hearthstone-cards/
  * Description:       Hearthstone Cards for WordPress adds an overlay to written card names and displays the associated image while hovering them.
- * Version:           2.3.6
+ * Version:           2.3.7
  * Author:            flowdee
  * Author URI:        https://coder.flowdee.de
  * Text Domain:       hearthstone-cards
@@ -27,8 +27,8 @@ if ( ! defined( 'WPINC' ) ) {
 /*----------------------------------------------------------------------------*
  * Define Plugin Constants
  *----------------------------------------------------------------------------*/
-define( 'HCFW_VERSION', '2.3.6' );
-define( 'HCFW_LAST_UPDATE', '13.12.2016' );
+define( 'HCFW_VERSION', '2.3.7' );
+define( 'HCFW_LAST_UPDATE', '05.03.2017' );
 define( 'HCFW_DIR', plugin_dir_path( __FILE__ ) );
 define( 'HCFW_URL', plugin_dir_url( __FILE__ ) );
 define( 'HCFW_CACHE', 'hcfw_cache' );
