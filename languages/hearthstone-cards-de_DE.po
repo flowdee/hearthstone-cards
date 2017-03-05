@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Hearthstone Cards for WordPress\n"
-"POT-Creation-Date: 2016-09-22 11:08+0200\n"
-"PO-Revision-Date: 2016-09-22 11:08+0200\n"
+"POT-Creation-Date: 2017-03-05 18:38+0100\n"
+"PO-Revision-Date: 2017-03-05 18:39+0100\n"
 "Last-Translator: flowdee <coder@flowdee.de>\n"
 "Language-Team: flowdee <coder@flowdee.de>\n"
 "Language: de_DE\n"
@@ -47,7 +47,7 @@ msgstr ""
 msgid "Show cards"
 msgstr "Karten anzeigen"
 
-#: admin/views/admin.php:85 admin/views/admin.php:112 admin/views/admin.php:129
+#: admin/views/admin.php:85 admin/views/admin.php:115 admin/views/admin.php:132
 msgid "Enabled"
 msgstr "Aktiviert"
 
@@ -83,56 +83,64 @@ msgstr "Spanisch"
 msgid "Portuguese (Brazil)"
 msgstr "Portugiesisch (Brasilien)"
 
-#: admin/views/admin.php:107
+#: admin/views/admin.php:104
+msgid ""
+"Here you can <strong>select the language for the written card names</"
+"strong>. Right now the card images are only available in English."
+msgstr ""
+"Hier kannst du die <strong>Sprache der geschriebenen Kartennamen auswählen</"
+"strong>. Die Kartenbilder sind aktuell nur auf Englisch verfügbar."
+
+#: admin/views/admin.php:110
 msgid "Colored card names"
 msgstr "Farbige Kartennamen"
 
-#: admin/views/admin.php:114 admin/views/admin.php:131
+#: admin/views/admin.php:117 admin/views/admin.php:134
 msgid "e.g."
 msgstr "z.B."
 
-#: admin/views/admin.php:114
+#: admin/views/admin.php:117
 msgid "Holy Nova"
 msgstr "Heilige Nova"
 
-#: admin/views/admin.php:115 admin/views/admin.php:131
-#: admin/views/admin.php:132
+#: admin/views/admin.php:118 admin/views/admin.php:134
+#: admin/views/admin.php:135
 msgid "Shadow Madness"
 msgstr "Shadow Madness"
 
-#: admin/views/admin.php:116
+#: admin/views/admin.php:119
 msgid "Loot Hoarder"
 msgstr "Loot Hoarder"
 
-#: admin/views/admin.php:117
+#: admin/views/admin.php:120
 msgid "Cabal Shadow Priest"
 msgstr "Cabal Shadow Priest"
 
-#: admin/views/admin.php:118
+#: admin/views/admin.php:121
 msgid "Ragnaros the Firelord"
 msgstr "Ragnaros the Firelord"
 
-#: admin/views/admin.php:124
+#: admin/views/admin.php:127
 msgid "Bold card names"
 msgstr "Fettgedruckte Kartennamen"
 
-#: admin/views/admin.php:131
+#: admin/views/admin.php:134
 msgid "or"
 msgstr "oder"
 
-#: admin/views/admin.php:138
+#: admin/views/admin.php:141
 msgid "Last Update"
 msgstr "Letzte Aktualisierung"
 
-#: admin/views/admin.php:145
+#: admin/views/admin.php:148
 msgid "Cards database will be updated automatically"
 msgstr "Karten-Datenbank wird automatisch aktualisiert"
 
-#: admin/views/admin.php:147
+#: admin/views/admin.php:150
 msgid "Local cards database will be taken"
 msgstr "Lokale Karten-Datenbank wird verwendet"
 
-#: admin/views/admin.php:151
+#: admin/views/admin.php:154
 msgid ""
 "In order to receive updated cards automatically, <strong>PHP cURL</strong> "
 "extension must be enabled on your web hosting."
@@ -140,15 +148,15 @@ msgstr ""
 "Um automatisch die neuesten Karten zu erhalten, muss die <strong>PHP cURL</"
 "strong> Erweiterung auf deinem WebHosting aktiviert sein."
 
-#: admin/views/admin.php:157
+#: admin/views/admin.php:160
 msgid "Check in order to force updating cards"
 msgstr "Aktivieren, um das Aktualisieren der Karten zu erzwingen."
 
-#: admin/views/admin.php:166
+#: admin/views/admin.php:169
 msgid "Update settings"
 msgstr "Einstellungen aktualisieren"
 
-#: admin/views/admin.php:187
+#: admin/views/admin.php:190
 msgid ""
 "Hearthstone Cards for WordPress adds an overlay to written card names within "
 "brackets e.g. [Druid of the Claw] and displays the associated image while "
@@ -157,7 +165,7 @@ msgstr ""
 "Mit Hearthstone Cards for WordPress werden Kartennamen mit einem „Overlay“ "
 "versehen, welches die aktuelle Karte zeigt."
 
-#: admin/views/admin.php:188
+#: admin/views/admin.php:191
 msgid ""
 "All of my plugins & themes are handmade with passion. I really looking "
 "forward to your feedback and suggestions."
@@ -166,25 +174,148 @@ msgstr ""
 "Freude. Daher freue ich mich sehr über dein Feedback und "
 "Verbesserungsvorschläge."
 
-#: admin/views/admin.php:196
+#: admin/views/admin.php:199
 msgid "Support & Resources"
 msgstr "Support & Links"
 
-#: admin/views/admin.php:199
+#: admin/views/admin.php:202
 msgid "Visit plugin page"
 msgstr "Plugin-Seite aufrufen"
 
-#: admin/views/admin.php:200
+#: admin/views/admin.php:203
 msgid "View online demo"
 msgstr "Online-Demo aufrufen"
 
-#: admin/views/admin.php:201
+#: admin/views/admin.php:204
 msgid "Issue tracker"
 msgstr "Fehlersammlung"
 
-#: admin/views/admin.php:202
+#: admin/views/admin.php:205
 msgid "Follow me on Twitter"
 msgstr "Folge mir auf Twitter"
+
+#: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:3
+#: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:5
+#: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:9
+#: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:10
+#: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:14
+#: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:15
+#: node_modules/grunt-checktextdomain/test/expected/variable-domain-autocorrect.php:4
+#: node_modules/grunt-checktextdomain/test/expected/variable-domain-autocorrect.php:6
+#: node_modules/grunt-checktextdomain/test/expected/variable-domain-autocorrect.php:10
+#: node_modules/grunt-checktextdomain/test/expected/variable-domain-autocorrect.php:11
+#: node_modules/grunt-checktextdomain/test/expected/variable-domain-autocorrect.php:15
+#: node_modules/grunt-checktextdomain/test/expected/variable-domain-autocorrect.php:16
+#: node_modules/grunt-checktextdomain/test/fixtures/correct-domain.php:3
+#: node_modules/grunt-checktextdomain/test/fixtures/correct-domain.php:5
+#: node_modules/grunt-checktextdomain/test/fixtures/correct-domain.php:9
+#: node_modules/grunt-checktextdomain/test/fixtures/correct-domain.php:10
+#: node_modules/grunt-checktextdomain/test/fixtures/correct-domain.php:14
+#: node_modules/grunt-checktextdomain/test/fixtures/correct-domain.php:15
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain-autocorrect.php:3
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain-autocorrect.php:5
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain-autocorrect.php:9
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain-autocorrect.php:10
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain-autocorrect.php:14
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain-autocorrect.php:15
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain.php:3
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain.php:5
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain.php:9
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain.php:10
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain.php:14
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain.php:15
+#: node_modules/grunt-checktextdomain/test/fixtures/missing-domain.php:3
+#: node_modules/grunt-checktextdomain/test/fixtures/missing-domain.php:5
+#: node_modules/grunt-checktextdomain/test/fixtures/missing-domain.php:9
+#: node_modules/grunt-checktextdomain/test/fixtures/missing-domain.php:10
+#: node_modules/grunt-checktextdomain/test/fixtures/missing-domain.php:14
+#: node_modules/grunt-checktextdomain/test/fixtures/missing-domain.php:15
+#: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:4
+#: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:6
+#: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:10
+#: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:11
+#: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:15
+#: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:16
+msgid "Hello World"
+msgstr ""
+
+#: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:4
+#: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:6
+#: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:11
+#: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:16
+#: node_modules/grunt-checktextdomain/test/expected/variable-domain-autocorrect.php:5
+#: node_modules/grunt-checktextdomain/test/expected/variable-domain-autocorrect.php:7
+#: node_modules/grunt-checktextdomain/test/expected/variable-domain-autocorrect.php:12
+#: node_modules/grunt-checktextdomain/test/expected/variable-domain-autocorrect.php:17
+#: node_modules/grunt-checktextdomain/test/fixtures/correct-domain.php:4
+#: node_modules/grunt-checktextdomain/test/fixtures/correct-domain.php:6
+#: node_modules/grunt-checktextdomain/test/fixtures/correct-domain.php:11
+#: node_modules/grunt-checktextdomain/test/fixtures/correct-domain.php:16
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain-autocorrect.php:4
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain-autocorrect.php:6
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain-autocorrect.php:11
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain-autocorrect.php:16
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain.php:4
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain.php:6
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain.php:11
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain.php:16
+#: node_modules/grunt-checktextdomain/test/fixtures/missing-domain.php:4
+#: node_modules/grunt-checktextdomain/test/fixtures/missing-domain.php:6
+#: node_modules/grunt-checktextdomain/test/fixtures/missing-domain.php:11
+#: node_modules/grunt-checktextdomain/test/fixtures/missing-domain.php:16
+#: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:5
+#: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:7
+#: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:12
+#: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:17
+msgctxt "verb"
+msgid "Post"
+msgstr ""
+
+#: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:20
+#: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:24
+#: node_modules/grunt-checktextdomain/test/expected/variable-domain-autocorrect.php:21
+#: node_modules/grunt-checktextdomain/test/expected/variable-domain-autocorrect.php:25
+#: node_modules/grunt-checktextdomain/test/fixtures/correct-domain.php:20
+#: node_modules/grunt-checktextdomain/test/fixtures/correct-domain.php:24
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain-autocorrect.php:20
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain-autocorrect.php:24
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain.php:20
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain.php:24
+#: node_modules/grunt-checktextdomain/test/fixtures/missing-domain.php:20
+#: node_modules/grunt-checktextdomain/test/fixtures/missing-domain.php:24
+#: node_modules/grunt-checktextdomain/test/fixtures/plurals.php:3
+#: node_modules/grunt-checktextdomain/test/fixtures/plurals.php:8
+#: node_modules/grunt-checktextdomain/test/fixtures/plurals.php:15
+#: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:21
+#: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:25
+#, php-format
+msgid "%d apple"
+msgid_plural "%d apples"
+msgstr[0] ""
+msgstr[1] ""
+
+#: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:21
+#: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:25
+#: node_modules/grunt-checktextdomain/test/expected/variable-domain-autocorrect.php:22
+#: node_modules/grunt-checktextdomain/test/expected/variable-domain-autocorrect.php:26
+#: node_modules/grunt-checktextdomain/test/fixtures/correct-domain.php:21
+#: node_modules/grunt-checktextdomain/test/fixtures/correct-domain.php:25
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain-autocorrect.php:21
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain-autocorrect.php:25
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain.php:21
+#: node_modules/grunt-checktextdomain/test/fixtures/incorrect-domain.php:25
+#: node_modules/grunt-checktextdomain/test/fixtures/missing-domain.php:25
+#: node_modules/grunt-checktextdomain/test/fixtures/plurals.php:4
+#: node_modules/grunt-checktextdomain/test/fixtures/plurals.php:9
+#: node_modules/grunt-checktextdomain/test/fixtures/plurals.php:16
+#: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:22
+#: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:26
+#, php-format
+msgctxt "noun, job positions"
+msgid "%d post"
+msgid_plural "%d posts"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Plugin URI of the plugin/theme
 msgid "https://wordpress.org/plugins/hearthstone-cards/"

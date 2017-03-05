@@ -100,6 +100,9 @@ $hcfw_bold_links = get_option('hcfw_bold_links');
                                                         <option<?php if($hcfw_language == 'esES') echo ' selected="selected"'; ?> value="esES"><?php _e( 'Spanish', 'hearthstone-cards' ); ?></option>
                                                         <option<?php if($hcfw_language == 'ptBR') echo ' selected="selected"'; ?> value="ptBR"><?php _e( 'Portuguese (Brazil)', 'hearthstone-cards' ); ?></option>
                                                     </select>
+                                                    <p>
+                                                        <small><?php _e('Here you can <strong>select the language for the written card names</strong>. Right now the card images are only available in English.', 'hearthstone-cards' ); ?></small>
+                                                    </p>
                                                 </fieldset>
                                             </td>
                                         </tr>
