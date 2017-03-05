@@ -180,30 +180,67 @@ function hcfw_find_and_replace_cards($content){
 
 function hcfw_get_card_image_paths() {
 
-    $images = get_transient( HCFW_CARD_IMAGE_PATHS_CACHE );
+    $paths = get_transient( HCFW_CARD_IMAGE_PATHS_CACHE );
 
-    if ( empty( $images ) ) {
+    if ( ! empty( $paths ) && is_array( $paths ) && sizeof( $paths ) > 0 )
+        return $paths;
+
+    // First prio: Remote call
+    try {
+
+        // Try API call
+        $response = wp_remote_get( 'https://raw.githubusercontent.com/schmich/hearthstone-card-images/master/images.json', array(
+            'timeout' => 15,
+            'sslverify' => false
+        ));
+
+        if ( is_wp_error( $response ) ) {
+            $string = null;
+
+        } elseif ( is_array( $response ) && isset ( $response['body'] ) ) {
+            $string = $response['body'];
+
+        } else {
+            $string = null;
+        }
+
+    } catch ( Exception $ex ) {
+        $string = null;
+    }
+
+    // Fallback: Local file
+    if ( empty( $string ) ) {
+
+        $local_json_file = HCFW_DIR . 'includes/data/images.json';
 
         // Read json file
-        $images_json_file = HCFW_DIR . 'includes/data/images.json';
+        $string = file_get_contents( $local_json_file );
+    }
 
-        // Read json file
-        $images = file_get_contents($images_json_file);
+    // Decode json string
+    $images = json_decode( $string, true );
+
+    // Build paths
+    if ( ! empty( $images ) && is_array( $images ) ) {
 
         $paths = array();
 
-        if ( is_array( $images ) ) {
-            foreach ( $images as $image ) {
-                if ( ! empty( $image['id'] ) && ! empty( $image['path'] ) )
-                    $paths[$image['id']] = $image['path'];
-            }
+        foreach ( $images as $image ) {
+            if ( ! empty( $image['id'] ) && ! empty( $image['path'] ) )
+                $paths[$image['id']] = $image['path'];
         }
 
-        if ( ! empty( $images ) )
-            set_transient( HCFW_CARD_IMAGE_PATHS_CACHE, $images, 12 * 60 * 24 * 7 ); // 7 Day
+        // Paths built
+        if ( sizeof( $paths ) > 0 ) {
+
+            // Store paths
+            set_transient( HCFW_CARD_IMAGE_PATHS_CACHE, $paths, 12 * 60 * 24 * 7 ); // 7 Day
+
+            return $paths;
+        }
     }
 
-    return $images;
+    return null;
 }
 
 // Filter
@@ -221,4 +258,26 @@ if(HCFW_ACTIVE) {
     // BuddyPress
     add_filter('bp_get_activity_content_body', 'hcfw_find_and_replace_cards');
     add_filter('bp_get_the_thread_message_content', 'hcfw_find_and_replace_cards');
+}
+
+/*
+ * Debug
+ */
+add_shortcode( 'hcfw_debug', function() {
+
+    ob_start();
+
+    $paths = hcfw_get_card_image_paths();
+
+    hcfw_debug($paths);
+
+    $str = ob_get_clean();
+
+    return $str;
+});
+
+function hcfw_debug( $args ) {
+    echo '<pre>';
+    print_r($args);
+    echo '</pre>';
 }

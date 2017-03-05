@@ -18,8 +18,10 @@ if ( isset( $_POST["hcfw_submit"] ) ) {
         $delete_cache = true;
 
     // Empty cache
-    if ( $delete_cache )
-        delete_transient( HCFW_CACHE );
+    if ( $delete_cache ) {
+        delete_transient(HCFW_CACHE);
+        delete_transient(HCFW_CARD_IMAGE_PATHS_CACHE);
+    }
 
     // Update options
     update_option("hcfw_active", $hcfw_active);

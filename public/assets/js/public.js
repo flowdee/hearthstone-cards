@@ -16,7 +16,7 @@
 
             //var gold = '<div class="hcfw-overlay" style="width: '+card_width+'px"><img src="http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/'+card_id+'_premium.gif" width="'+card_width+'" height="'+card_height+'"/></div>';
 
-            var replace = '<div class="hcfw-overlay" style="width: '+card_width+'px"><img src="https://cdn.rawgit.com/schmich/hearthstone-card-images/'+imagePath+'.png" width="'+card_width+'" height="'+card_height+'"/></div>';
+            var replace = '<div class="hcfw-overlay" style="width: '+card_width+'px"><img src="https://cdn.rawgit.com/schmich/hearthstone-card-images/'+imagePath+'" width="'+card_width+'" height="'+card_height+'"/></div>';
 
             /*
             if ( card_gold ) {
