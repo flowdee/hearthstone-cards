@@ -87,7 +87,7 @@ function hcfw_get_replacements() {
             if ( is_wp_error( $response ) ) {
                 $string = null;
 
-            } elseif ( is_array( $response ) && isset ( $response['body'] ) ) {
+            } elseif ( is_array( $response ) && isset ( $response['body'] ) && strpos( $response['body'], '"type":"SPELL"') !== false ) {
                 $string = $response['body'];
                 set_transient( HCFW_CACHE, $string, 60 * 60 * 120 );
 
