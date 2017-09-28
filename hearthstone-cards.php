@@ -27,8 +27,8 @@ if ( ! defined( 'WPINC' ) ) {
 /*----------------------------------------------------------------------------*
  * Define Plugin Constants
  *----------------------------------------------------------------------------*/
-define( 'HCFW_VERSION', '2.3.9' );
-define( 'HCFW_LAST_UPDATE', '12.08.2017' );
+define( 'HCFW_VERSION', '2.4.0' );
+define( 'HCFW_LAST_UPDATE', '28.09.2017' );
 define( 'HCFW_DIR', plugin_dir_path( __FILE__ ) );
 define( 'HCFW_URL', plugin_dir_url( __FILE__ ) );
 define( 'HCFW_CACHE', 'hcfw_cache' );
