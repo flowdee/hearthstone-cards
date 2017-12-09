@@ -200,7 +200,7 @@ $hcfw_bold_links = get_option('hcfw_bold_links');
                         <div class="inside">
                             <ul>
                                 <li><a href="https://wordpress.org/plugins/hearthstone-cards/" title="Visit plugin page" target="_blank"><?php _e( 'Visit plugin page', 'hearthstone-cards' ); ?></a></li>
-                                <li><a href="https://coder.flowdee.de/hearthstone-cards-for-wordpress/" title="View online demo"><?php _e( 'View online demo', 'hearthstone-cards' ); ?></a></li>
+                                <li><a href="https://kryptonitewp.com/demo/hearthstone-cards-wordpress/" title="View online demo"><?php _e( 'View online demo', 'hearthstone-cards' ); ?></a></li>
                                 <li><a href="https://github.com/flowdee/hearthstone-cards/issues" title="Issue Tracker"><?php _e( 'Issue tracker', 'hearthstone-cards' ); ?></a></li>
                                 <li><a href="https://twitter.com/flowdee" title="Follow me on Twitter"><?php _e( 'Follow me on Twitter', 'hearthstone-cards' ); ?></a></li>
                             </ul>
