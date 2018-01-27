@@ -44,6 +44,11 @@ function hcfw_get_replacements() {
                 $data_hcfw_lang = 'eses';
                 break;
 
+            case ("itIT"):
+                $json_lang = 'itIT';
+                $data_hcfw_lang = 'itit';
+                break;
+
             case ("ptBR"):
                 $json_lang = 'ptBR';
                 $data_hcfw_lang = 'ptbr';

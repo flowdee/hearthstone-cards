@@ -96,6 +96,7 @@ $hcfw_bold_links = get_option('hcfw_bold_links');
                                                         <option<?php if($hcfw_language == 'zhCN') echo ' selected="selected"'; ?> value="zhCN"><?php _e( 'Chinese', 'hearthstone-cards' ); ?></option>
                                                         <option<?php if($hcfw_language == 'frFR') echo ' selected="selected"'; ?> value="frFR"><?php _e( 'French', 'hearthstone-cards' ); ?></option>
                                                         <option<?php if($hcfw_language == 'deDE') echo ' selected="selected"'; ?> value="deDE"><?php _e( 'German', 'hearthstone-cards' ); ?></option>
+                                                        <option<?php if($hcfw_language == 'itIT') echo ' selected="selected"'; ?> value="itIT"><?php _e( 'Italian', 'hearthstone-cards' ); ?></option>
                                                         <option<?php if($hcfw_language == 'ruRU') echo ' selected="selected"'; ?> value="ruRU"><?php _e( 'Russian', 'hearthstone-cards' ); ?></option>
                                                         <option<?php if($hcfw_language == 'esES') echo ' selected="selected"'; ?> value="esES"><?php _e( 'Spanish', 'hearthstone-cards' ); ?></option>
                                                         <option<?php if($hcfw_language == 'ptBR') echo ' selected="selected"'; ?> value="ptBR"><?php _e( 'Portuguese (Brazil)', 'hearthstone-cards' ); ?></option>

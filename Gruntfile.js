@@ -20,6 +20,7 @@ module.exports = function (grunt) {
             'dist/enUS/cards.json': 'https://api.hearthstonejson.com/v1/22611/enUS/cards.json',
             'dist/esES/cards.json': 'https://api.hearthstonejson.com/v1/22611/esES/cards.json',
             'dist/frFR/cards.json': 'https://api.hearthstonejson.com/v1/22611/frFR/cards.json',
+            'dist/itIT/cards.json': 'https://api.hearthstonejson.com/v1/22611/itIT/cards.json',
             'dist/ptBR/cards.json': 'https://api.hearthstonejson.com/v1/22611/ptBR/cards.json',
             'dist/ruRU/cards.json': 'https://api.hearthstonejson.com/v1/22611/ruRU/cards.json',
             'dist/zhCN/cards.json': 'https://api.hearthstonejson.com/v1/22611/zhCN/cards.json'
