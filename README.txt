@@ -23,7 +23,7 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 *   Show colored card names according to their rarity
 *   Configuration page for more options
 *   Try out the online [demo](https://kryptonitewp.com/demo/hearthstone-cards-wordpress/)
-*   Regular updates and improvements: Go though the [changelog](https://wordpress.org/plugins/hearthstone-cards/changelog/)
+*   Regular updates and improvements: Go though the [changelog](https://wordpress.org/plugins/hearthstone-cards/#developers)
 
 = How to display Hearthstone Cards =
 Please use e.g. [Flamewaker] or [Flamewaker gold] to convert your card names within your WordPress pages or posts.

@@ -9,7 +9,7 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 ## More information
 
 * Try out the online [demo](https://kryptonitewp.com/demo/hearthstone-cards-wordpress/)
-* Go through the [changelog](https://wordpress.org/plugins/hearthstone-cards/changelog/)
+* Go through the [changelog](https://wordpress.org/plugins/hearthstone-cards/#developers)
 * Follow me on Twitter [@flowdee](https://twitter.com/flowdee/) to stay in contact and informed about updates
 
 You like my work? [Support me](https://donate.flowdee.de/) or not. I don't mind, as long as I was able to help you :wink:
