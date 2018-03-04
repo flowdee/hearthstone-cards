@@ -4,7 +4,7 @@ Donate link: https://donate.flowdee.de
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
 Requires PHP: 5.6.0
-Tested up to: 4.9.2
+Tested up to: 4.9.4
 Stable tag: 2.4.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -85,10 +85,10 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Changelog ==
 
-= Version 2.4.3 (27th January 2018) =
+= Version 2.4.3 (4th March 2018) =
 * New: Added support for Italian card names
 * Fix: Changing card name language didn't empty the plugin cache properly
-* WordPress 4.9.2 compatibility
+* WordPress 4.9.4 compatibility
 
 = Version 2.4.2 (9th December 2017) =
 * Updated local cards database to latest 22611
@@ -230,10 +230,10 @@ Yes of course. Please install the plugin via the network administration but **do
 
 == Upgrade Notice ==
 
-= Version 2.4.3 (27th January 2018) =
+= Version 2.4.3 (4th March 2018) =
 * New: Added support for Italian card names
 * Fix: Changing card name language didn't empty the plugin cache properly
-* WordPress 4.9.2 compatibility
+* WordPress 4.9.4 compatibility
 
 = Version 2.4.2 (9th December 2017) =
 * Updated local cards database to latest 22611
