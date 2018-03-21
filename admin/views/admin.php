@@ -54,6 +54,12 @@ $hcfw_bold_links = get_option('hcfw_bold_links');
     }
 </style>
 
+<div class="notice notice-info">
+    <p>In order to serve all the card images for you, we host them on a paid CDN (Content Delivery Network) which <strong>produces hosting costs every year</strong>.</p>
+    <p>If you are happy with the plugin and you want to support us, every donation is much appreciated. Thanks in advance!</p>
+    <p><a href="https://kryptonitewp.com/donations/hearthstone-cards/" target="_blank" rel="nofollow" class="button secondary">Click here to Donate</a></p>
+</div>
+
 <div class="wrap hcfw-wrap">
 
     <h2><?php echo esc_html( get_admin_page_title() ); ?></h2>

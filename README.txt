@@ -1,11 +1,11 @@
 === Hearthstone Cards for WordPress ===
 Contributors: flowdee, kryptonitewp
-Donate link: https://donate.flowdee.de
+Donate link: https://kryptonitewp.com/donations/hearthstone-cards/
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
 Requires PHP: 5.6.0
 Tested up to: 4.9.4
-Stable tag: 2.4.3
+Stable tag: 2.4.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -16,18 +16,22 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 
 = Features =
 
-*   Use brackets e.g. [Flamewaker] or [Flamewaker gold] to convert your card names
+*   Use brackets e.g. [Flamewaker] to convert card names
 *   Supporting: Posts, Pages, Custom Post Types, Comments, bbPress, Page Builder, BuddyPress & Text Widgets
 *   Adding overlay and displays the associated image while hovering card names
-*   Supporting the following card languages: English, Chinese, French, German, Russian, Spanish & Portuguese (Brazil)
-*   Standard and gold (premium) card images available
+*   Supporting the following languages for displaying card names: English, Chinese, French, German, Russian, Spanish & Portuguese (Brazil)
+*   Card images are available in English only
 *   Show colored card names according to their rarity
 *   Configuration page for more options
 *   Try out the online [demo](https://kryptonitewp.com/demo/hearthstone-cards-wordpress/)
 *   Regular updates and improvements: Go though the [changelog](https://wordpress.org/plugins/hearthstone-cards/#developers)
 
+> <strong>Please note</strong><br>
+> In order to serve all the card images for you, we host them on a paid CDN (Content Delivery Network) which produces hosting costs every year.
+> If you are happy with the plugin and you want to support us, every [donation](https://kryptonitewp.com/donations/hearthstone-cards/) is much appreciated. Thanks in advance!
+
 = How to display Hearthstone Cards =
-Please use e.g. [Flamewaker] or [Flamewaker gold] to convert your card names within your WordPress pages or posts.
+Please use e.g. [Flamewaker] to convert your card names within your WordPress pages or posts.
 
 Basically take care of using correct special character according to your selected language.
 
@@ -38,7 +42,7 @@ Basically take care of using correct special character according to your selecte
 
 = Credits =
 
-*   Card images provided through the awesome [Hearthhead.com](http://www.hearthhead.com/) database
+All card images and names copyright © Blizzard Entertainment, Inc. Hearthstone® is a registered trademark of Blizzard Entertainment, Inc. This plugin is not affiliated or associated with or endorsed by Hearthstone® or Blizzard Entertainment, Inc.
 
 == Installation ==
 
@@ -84,6 +88,11 @@ Yes of course. Please install the plugin via the network administration but **do
 2. Hearthstone Cards overlay in action
 
 == Changelog ==
+
+= Version 2.4.4 (21th March 2018) =
+* Improvement: Using our own CDN in order to prevent third party dependency (donations appreciated, see settings page)
+* Fix: Cards weren't converted anymore (due to structural changes in the used sources)
+* Unfortunately golden card images are no longer available
 
 = Version 2.4.3 (4th March 2018) =
 * New: Added support for Italian card names
@@ -229,6 +238,11 @@ Yes of course. Please install the plugin via the network administration but **do
 * Initial release
 
 == Upgrade Notice ==
+
+= Version 2.4.4 (21th March 2018) =
+* Improvement: Using our own CDN in order to prevent third party dependency (donations appreciated, see settings page)
+* Fix: Cards weren't converted anymore (due to structural changes in the used sources)
+* Unfortunately golden card images are no longer available
 
 = Version 2.4.3 (4th March 2018) =
 * New: Added support for Italian card names

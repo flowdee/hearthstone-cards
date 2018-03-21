@@ -84,7 +84,7 @@ function hcfw_get_replacements() {
         try {
 
             // Try API call
-            $response = wp_remote_get( 'https://api.hearthstonejson.com/v1/latest/' . $json_lang . '/cards.json', array(
+            $response = wp_remote_get( HCFW_CDN_URL . 'data/' . $json_lang . '/cards.json', array(
                 'timeout' => 15,
                 'sslverify' => false
             ));
@@ -118,33 +118,23 @@ function hcfw_get_replacements() {
     //$image_paths = hcfw_get_card_image_paths();
     $images = hcfw_get_card_images();
 
+    //hcfw_debug( $images );
+
     // Action
-    if( !empty($string) ) {
+    if ( ! empty( $string ) && ! empty( $images ) && is_array( $images ) ) {
 
         // Prepare content
         $json_a = json_decode($string,true);
 
         foreach ($json_a as $key => $sub){
 
-            if ( ! isset( $sub['id'] ) || ! isset( $sub['name'] ) )
+            if ( ! isset( $sub['dbfId'] ) || ! isset( $sub['name'] ) )
                 continue;
 
             if ( ! isset ( $sub['type'] ) || 'ENCHANTMENT' == $sub['type'] )
                 continue;
 
-            /* // Deprecated
-            if ( ! isset( $image_paths[$sub['id']] ) )
-                continue;
-
-            $image_path = $image_paths[$sub['id']];
-            */
-
-            if ( ! isset( $images[$sub['id']] ) )
-                continue;
-
-            $image_url = $images[$sub['id']];
-
-            if ( isset ( $sub['collectible'] ) || isset ( $sub['set'] ) && $sub['set'] == 'CORE' ) {
+            if ( isset ( $sub['collectible'] ) || ( isset ( $sub['set'] ) && $sub['set'] == 'CORE' ) ) {
 
                 // Setup classes
                 $classes = 'hcfw-card';
@@ -157,19 +147,33 @@ function hcfw_get_replacements() {
                     $classes .= ' hcfw-bold';
                 }
 
-                // Setup link
-                //$newName = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '" data-hcfw-image-path="' . $image_path . '">' . $sub['name'] . '</a>'; // Deprecated
+                /*
+                if ( 'Spirit Claws' === $sub['name'] ) {
+                    echo 'Spirit Claws >> id: ' . $sub['dbfId'];
+                    hcfw_debug( $images, '$images' );
+                }
+                */
 
-                $newName = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '" data-hcfw-image-url="' . $image_url . '">' . $sub['name'] . '</a>';
+                $image_id = $sub['dbfId'];
+                $image_url = ( in_array( $sub['dbfId'], $images ) ) ? HCFW_CDN_URL . 'images/' . $image_id . '.png' : null;
+
+                $newName = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '"';
+
+                if ( ! empty( $image_url ) )
+                    $newName .= ' data-hcfw-image-url="' . $image_url . '"';
+
+                $newName .= '>' . $sub['name'] . '</a>';
 
                 $replace['[' . $sub['name'] . ']'] = $newName;
                 $replace['[' . htmlentities($sub['name'], ENT_COMPAT, 'UTF-8') . ']'] = $newName;
                 $replace['[' . str_replace("'", '&#8217;', $sub['name']) . ']'] = $newName;
 
-                // Gold cards
-                //$newNameGold = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '" data-hcfw-image-path="' . $image_path . '" data-hcfw-gold="true">' . $sub['name'] . '</a>'; // Deprecated
+                $newNameGold = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '"';
 
-                $newNameGold = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '" data-hcfw-image-url="' . $image_url . '" data-hcfw-gold="true">' . $sub['name'] . '</a>';
+                if ( ! empty( $image_url ) )
+                    $newNameGold .= ' data-hcfw-image-url="' . $image_url . '"'; // TODO: Golden cards currently not supported
+
+                $newNameGold .= ' data-hcfw-gold="true">' . $sub['name'] . '</a>';
 
                 $replace['[' . $sub['name'] . ' gold]'] = $newNameGold;
                 $replace['[' . htmlentities($sub['name'], ENT_COMPAT, 'UTF-8') . ' gold]'] = $newNameGold;
@@ -206,7 +210,7 @@ function hcfw_get_card_images() {
     try {
 
         // Try API call
-        $response = wp_remote_get( 'https://raw.githubusercontent.com/schmich/hearthstone-card-images/master/images.json', array(
+        $response = wp_remote_get( HCFW_CDN_URL . 'images.json', array(
             'timeout' => 15,
             'sslverify' => false
         ));
@@ -237,17 +241,12 @@ function hcfw_get_card_images() {
     // Decode json string
     $images_data = json_decode( $string, true );
 
+    //hcfw_debug( $images_data );
+
     // Build paths
-    if ( ! empty( $images_data ) && is_array( $images_data ) ) {
+    if ( ! empty( $images_data ) && is_array( $images_data ) && isset( $images_data['cards']['rel'] ) && is_array( $images_data['cards']['rel'] ) ) {
 
-        $images = array();
-
-        //hcfw_debug( $images );
-
-        foreach ( $images_data as $image_data ) {
-            if ( ! empty( $image_data['id'] ) && ! empty( $image_data['url'] ) )
-                $images[$image_data['id']] = $image_data['url'];
-        }
+        $images = array_keys( $images_data['cards']['rel'] );
 
         //hcfw_debug( $images );
 
@@ -258,75 +257,6 @@ function hcfw_get_card_images() {
             set_transient( HCFW_CARD_IMAGES_CACHE, $images, 12 * 60 * 24 * 7 ); // 7 Day
 
             return $images;
-        }
-    }
-
-    return null;
-}
-
-function hcfw_get_card_image_paths() { // Deprecated
-
-    $paths = get_transient( HCFW_CARD_IMAGE_PATHS_CACHE );
-
-    if ( ! empty( $paths ) && is_array( $paths ) && sizeof( $paths ) > 0 )
-        return $paths;
-
-    // First prio: Remote call
-    try {
-
-        // Try API call
-        $response = wp_remote_get( 'https://raw.githubusercontent.com/schmich/hearthstone-card-images/master/images.json', array(
-            'timeout' => 15,
-            'sslverify' => false
-        ));
-
-        if ( is_wp_error( $response ) ) {
-            $string = null;
-
-        } elseif ( is_array( $response ) && isset ( $response['body'] ) ) {
-            $string = $response['body'];
-
-        } else {
-            $string = null;
-        }
-
-    } catch ( Exception $ex ) {
-        $string = null;
-    }
-
-    // Fallback: Local file
-    if ( empty( $string ) ) {
-
-        $local_json_file = HCFW_DIR . 'includes/data/images.json';
-
-        // Read json file
-        $string = file_get_contents( $local_json_file );
-    }
-
-    // Decode json string
-    $images = json_decode( $string, true );
-
-    // Build paths
-    if ( ! empty( $images ) && is_array( $images ) ) {
-
-        $paths = array();
-
-        //hcfw_debug( $images );
-
-        foreach ( $images as $image ) {
-            if ( ! empty( $image['id'] ) && ! empty( $image['path'] ) )
-                $paths[$image['id']] = $image['path'];
-        }
-
-        hcfw_debug( $paths );
-
-        // Paths built
-        if ( sizeof( $paths ) > 0 ) {
-
-            // Store paths
-            set_transient( HCFW_CARD_IMAGE_PATHS_CACHE, $paths, 12 * 60 * 24 * 7 ); // 7 Day
-
-            return $paths;
         }
     }
 
@@ -357,7 +287,7 @@ add_shortcode( 'hcfw_debug', function() {
 
     ob_start();
 
-    $paths = hcfw_get_card_image_paths();
+    $paths = array();
 
     hcfw_debug($paths);
 
@@ -366,8 +296,26 @@ add_shortcode( 'hcfw_debug', function() {
     return $str;
 });
 
-function hcfw_debug( $args ) {
-    echo '<pre>';
-    print_r($args);
-    echo '</pre>';
+function hcfw_debug( $args, $title = '' ) {
+
+    if ( defined( 'WP_DEBUG' ) && WP_DEBUG === true ) {
+
+        if ( ! empty( $title ) )
+            echo '<h3>' . $title . '</h3>';
+
+        echo '<pre>';
+        print_r($args);
+        echo '</pre>';
+    }
+}
+
+function hcfw_debug_log( $message ) {
+
+    if ( defined( 'WP_DEBUG_LOG' ) && WP_DEBUG_LOG === true ) {
+        if (is_array( $message ) || is_object( $message ) ) {
+            error_log( print_r( $message, true ) );
+        } else {
+            error_log( $message );
+        }
+    }
 }

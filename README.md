@@ -12,8 +12,10 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 * Go through the [changelog](https://wordpress.org/plugins/hearthstone-cards/#developers)
 * Follow me on Twitter [@flowdee](https://twitter.com/flowdee/) to stay in contact and informed about updates
 
-You like my work? [Support me](https://donate.flowdee.de/) or not. I don't mind, as long as I was able to help you :wink:
+You like my work? [Support me](https://kryptonitewp.com/donations/hearthstone-cards/) or not. I don't mind, as long as I was able to help you :wink:
 
 ### Credits
 
-This WordPress plugin was developed by [flowdee](http://flowdee.de/) and the card images are provided through the amazing [Hearthhead.com](http://www.hearthhead.com/) database.
+All card images and names copyright © Blizzard Entertainment, Inc. Hearthstone® is a registered trademark of Blizzard Entertainment, Inc. This plugin is not affiliated or associated with or endorsed by Hearthstone® or Blizzard Entertainment, Inc.
+
+This WordPress plugin was developed by [flowdee](http://flowdee.de/).
