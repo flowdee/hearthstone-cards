@@ -13,17 +13,18 @@ module.exports = function (grunt) {
         },
         curl: {
             // Images
+            // Source: https://github.com/schmich/hearthstone-card-images
             'dist/images.json': 'https://raw.githubusercontent.com/schmich/hearthstone-card-images/master/images.json',
             // Cards
             // Source: https://api.hearthstonejson.com/v1/latest/
-            'dist/deDE/cards.json': 'https://api.hearthstonejson.com/v1/23576/deDE/cards.json',
-            'dist/enUS/cards.json': 'https://api.hearthstonejson.com/v1/23576/enUS/cards.json',
-            'dist/esES/cards.json': 'https://api.hearthstonejson.com/v1/23576/esES/cards.json',
-            'dist/frFR/cards.json': 'https://api.hearthstonejson.com/v1/23576/frFR/cards.json',
-            'dist/itIT/cards.json': 'https://api.hearthstonejson.com/v1/23576/itIT/cards.json',
-            'dist/ptBR/cards.json': 'https://api.hearthstonejson.com/v1/23576/ptBR/cards.json',
-            'dist/ruRU/cards.json': 'https://api.hearthstonejson.com/v1/23576/ruRU/cards.json',
-            'dist/zhCN/cards.json': 'https://api.hearthstonejson.com/v1/23576/zhCN/cards.json'
+            'dist/deDE/cards.json': 'https://api.hearthstonejson.com/v1/23966/deDE/cards.json',
+            'dist/enUS/cards.json': 'https://api.hearthstonejson.com/v1/23966/enUS/cards.json',
+            'dist/esES/cards.json': 'https://api.hearthstonejson.com/v1/23966/esES/cards.json',
+            'dist/frFR/cards.json': 'https://api.hearthstonejson.com/v1/23966/frFR/cards.json',
+            'dist/itIT/cards.json': 'https://api.hearthstonejson.com/v1/23966/itIT/cards.json',
+            'dist/ptBR/cards.json': 'https://api.hearthstonejson.com/v1/23966/ptBR/cards.json',
+            'dist/ruRU/cards.json': 'https://api.hearthstonejson.com/v1/23966/ruRU/cards.json',
+            'dist/zhCN/cards.json': 'https://api.hearthstonejson.com/v1/23966/zhCN/cards.json'
         }
     });
 
