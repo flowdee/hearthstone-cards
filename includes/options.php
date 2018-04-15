@@ -17,11 +17,11 @@ function hcfw_plugin_upgrade() {
 
     if ( ! empty ( $last_version ) ) {
 
-        // v2.4.4 - Switching to our own CDN
-        if ( version_compare( $last_version, '2.4.4', '<' ) ) {
-            delete_transient(HCFW_CACHE);
-            delete_transient(HCFW_CARD_IMAGES_CACHE );
-        }
+        // After every update: Renew cache
+	    if ( version_compare( $last_version, HCFW_VERSION, '<' ) ) {
+		    delete_transient(HCFW_CACHE);
+		    delete_transient(HCFW_CARD_IMAGES_CACHE );
+	    }
 
     } else {
         // Pre v2.4.4 - Introducing "hcfw_version"
