@@ -94,7 +94,7 @@ function hcfw_get_replacements() {
 
             } elseif ( is_array( $response ) && isset ( $response['body'] ) && strpos( $response['body'], '"type":"SPELL"') !== false ) {
                 $string = $response['body'];
-                set_transient( HCFW_CACHE, $string, 60 * 60 * 120 );
+                set_transient( HCFW_CACHE, $string, DAY_IN_SECONDS * 7 ); // 7 Days
 
             } else {
                 $string = null;
@@ -254,7 +254,7 @@ function hcfw_get_card_images() {
         if ( sizeof( $images ) > 0 ) {
 
             // Store paths
-            set_transient( HCFW_CARD_IMAGES_CACHE, $images, 12 * 60 * 24 * 7 ); // 7 Day
+            set_transient( HCFW_CARD_IMAGES_CACHE, $images, DAY_IN_SECONDS * 7 ); // 7 Days
 
             return $images;
         }
