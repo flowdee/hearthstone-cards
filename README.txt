@@ -4,8 +4,8 @@ Donate link: https://kryptonitewp.com/donations/hearthstone-cards/
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
 Requires PHP: 5.6.0
-Tested up to: 5.0.0
-Stable tag: 2.7.0
+Tested up to: 5.1.1
+Stable tag: 2.8.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -88,6 +88,11 @@ Yes of course. Please install the plugin via the network administration but **do
 2. Hearthstone Cards overlay in action
 
 == Changelog ==
+
+= Version 2.8.0 (15th April 2019) =
+* New: Added cards for "Rise of Shadows" expansion
+* Updated cards database to latest 30103
+* WordPress 5.1.1 compatibility
 
 = Version 2.7.0 (8th December 2018) =
 * New: Added cards for "Rastakhan's Rumble" expansion
@@ -254,6 +259,11 @@ Yes of course. Please install the plugin via the network administration but **do
 * Initial release
 
 == Upgrade Notice ==
+
+= Version 2.8.0 (15th April 2019) =
+* New: Added cards for "Rise of Shadows" expansion
+* Updated cards database to latest 30103
+* WordPress 5.1.1 compatibility
 
 = Version 2.7.0 (8th December 2018) =
 * New: Added cards for "Rastakhan's Rumble" expansion
