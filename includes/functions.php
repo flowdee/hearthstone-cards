@@ -78,6 +78,7 @@ function hcfw_get_replacements() {
 
     $hcfw_bold_links = get_option('hcfw_bold_links');
 
+    /*
     // Fetch latest data from API
     if ( false === ( $string = get_transient( HCFW_CACHE ) ) ) {
 
@@ -104,6 +105,7 @@ function hcfw_get_replacements() {
             $string = null;
         }
     }
+    */
 
     // Fallback when no newer API data available
     if ( empty ( $string ) ) {
@@ -155,7 +157,7 @@ function hcfw_get_replacements() {
                 */
 
                 $image_id = $sub['dbfId'];
-                $image_url = ( in_array( $sub['dbfId'], $images ) ) ? HCFW_CDN_URL . 'images/' . $image_id . '.png' : null;
+                $image_url = ( in_array( $sub['dbfId'], $images ) ) ? HCFW_CDN_URL . 'rel/' . $image_id . '.png' : null;
 
                 $newName = '<a class="' . $classes . '" data-hcfw-card-id="' . $sub['id'] . '" data-hcfw-lang="'.$data_hcfw_lang.'" data-hcfw-width="'.$data_hcfw_width.'" data-hcfw-height="'.$data_hcfw_height.'" href="#" title="' . $sub['name'] . '"';
 

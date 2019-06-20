@@ -21,12 +21,12 @@ if ( ! defined( 'WPINC' ) ) {
  * Define Plugin Constants
  *----------------------------------------------------------------------------*/
 define( 'HCFW_VERSION', '2.8.0' );
-define( 'HCFW_LAST_UPDATE', '15.04.2019' );
+define( 'HCFW_LAST_UPDATE', '20.06.2019' );
 define( 'HCFW_DIR', plugin_dir_path( __FILE__ ) );
 define( 'HCFW_URL', plugin_dir_url( __FILE__ ) );
 define( 'HCFW_CACHE', 'hcfw_cache' );
 define( 'HCFW_CARD_IMAGES_CACHE', 'hcfw_card_images_cache' );
-define( 'HCFW_CDN_URL', 'https://wp-214d.kxcdn.com/hearthstone-cards/' );
+define( 'HCFW_CDN_URL', 'https://raw.githubusercontent.com/schmich/hearthstone-card-images/master/' );
 
 /*----------------------------------------------------------------------------*
  * Plugin Includes
