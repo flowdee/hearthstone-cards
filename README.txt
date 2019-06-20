@@ -27,8 +27,9 @@ Hearthstone Cards for WordPress adds an overlay to written card names and displa
 *   Regular updates and improvements: Go though the [changelog](https://wordpress.org/plugins/hearthstone-cards/#developers)
 
 > <strong>Please note</strong><br>
-> In order to serve all the card images for you, we host them on a paid CDN (Content Delivery Network) which produces hosting costs every year.
-> If you are happy with the plugin and you want to support us, every [donation](https://kryptonitewp.com/donations/hearthstone-cards/) is much appreciated. Thanks in advance!
+> Switched back to public CDN instead of hosting card files on our server because no one ever donated. This may lead to broken card images in future, but there's no other way.
+> Unfortunately, the used card images database is deprecated and right now there's no way to get the card images of the latest Hearthstone version. Nothing we can do from our side as well.
+> Officially, this plugin is marked as "non-supported".
 
 = How to display Hearthstone Cards =
 Please use e.g. [Flamewaker] to convert your card names within your WordPress pages or posts.
