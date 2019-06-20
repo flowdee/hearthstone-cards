@@ -4,8 +4,8 @@ Donate link: https://kryptonitewp.com/donations/hearthstone-cards/
 Tags: hearthstone, blizzard, cards, overlay, card, deck, tooltip, hearthstone cards, gold
 Requires at least: 3.5.1
 Requires PHP: 5.6.0
-Tested up to: 5.1.1
-Stable tag: 2.8.0
+Tested up to: 5.2.2
+Stable tag: 2.9.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -88,6 +88,13 @@ Yes of course. Please install the plugin via the network administration but **do
 2. Hearthstone Cards overlay in action
 
 == Changelog ==
+
+= Version 2.9.0 (20th June 2019) =
+* Info no. 1: Switched back to public CDN instead of hosting card files on our server because no one ever donated. This may lead to broken card images in future, but there's no other way.
+* Info no. 2: Unfortunately, the used card images database is deprecated and right now there's no way to get the card images of the latest Hearthstone version. Nothing we can do from our side as well.
+* Info no. 3: Officially, I will mark this plugin as "non-supported" from now.
+* Updated cards database to latest 30103
+* WordPress 5.2.2 compatibility
 
 = Version 2.8.0 (15th April 2019) =
 * New: Added cards for "Rise of Shadows" expansion
@@ -259,6 +266,13 @@ Yes of course. Please install the plugin via the network administration but **do
 * Initial release
 
 == Upgrade Notice ==
+
+= Version 2.9.0 (20th June 2019) =
+* Info no. 1: Switched back to public CDN instead of hosting card files on our server because no one ever donated. This may lead to broken card images in future, but there's no other way.
+* Info no. 2: Unfortunately, the used card images database is deprecated and right now there's no way to get the card images of the latest Hearthstone version. Nothing we can do from our side as well.
+* Info no. 3: Officially, I will mark this plugin as "non-supported" from now.
+* Updated cards database to latest 30103
+* WordPress 5.2.2 compatibility
 
 = Version 2.8.0 (15th April 2019) =
 * New: Added cards for "Rise of Shadows" expansion
