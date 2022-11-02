@@ -17,6 +17,6 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-curl": "^2.2.0",
     "grunt-downloadfile": "^0.3.2",
-    "load-grunt-tasks": "~0.2.0"
+    "load-grunt-tasks": "~5.1.0"
   }
 }
